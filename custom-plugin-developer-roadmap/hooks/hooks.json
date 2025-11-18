@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "onAgentInvoke": {
+      "description": "Automatically load relevant skills when an agent is invoked",
+      "script": "scripts/auto-load-skills.sh"
+    },
+    "onProjectCreate": {
+      "description": "Initialize project structure based on technology choice",
+      "script": "scripts/init-project.sh"
+    },
+    "onAssessmentComplete": {
+      "description": "Generate personalized learning recommendations",
+      "script": "scripts/generate-recommendations.sh"
+    }
+  }
+}

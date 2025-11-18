@@ -1,0 +1,349 @@
+{
+  "name": "developer-roadmap",
+  "version": "1.0.0",
+  "description": "Comprehensive developer learning plugin covering 65+ technology roadmaps from roadmap.sh. Includes specialized agents for Frontend, Backend, Mobile, DevOps, AI/Data, Programming, and Architecture with 30+ skills and interactive learning paths.",
+  "author": "Plugin Agent Marketplace",
+  "repository": "https://github.com/pluginagentmarketplace/custom-plugin-ai-agents",
+  "license": "MIT",
+  "keywords": [
+    "roadmap",
+    "learning",
+    "developer",
+    "frontend",
+    "backend",
+    "mobile",
+    "devops",
+    "ai",
+    "data-science",
+    "programming",
+    "architecture",
+    "react",
+    "nodejs",
+    "python",
+    "kubernetes",
+    "aws",
+    "system-design",
+    "career-development",
+    "tutorial",
+    "best-practices"
+  ],
+  "agents": [
+    {
+      "id": "frontend-development",
+      "name": "Frontend Development Agent",
+      "description": "Expert in React, Vue, Angular, TypeScript, and modern web technologies",
+      "file": "agents/01-frontend-development.md",
+      "triggers": [
+        "react",
+        "vue",
+        "angular",
+        "typescript",
+        "frontend",
+        "ui",
+        "css",
+        "html",
+        "nextjs",
+        "component"
+      ]
+    },
+    {
+      "id": "backend-development",
+      "name": "Backend Development Agent",
+      "description": "Specialist in API design, Node.js, Spring Boot, databases, and server-side development",
+      "file": "agents/02-backend-development.md",
+      "triggers": [
+        "backend",
+        "api",
+        "nodejs",
+        "express",
+        "spring boot",
+        "database",
+        "graphql",
+        "rest",
+        "microservices"
+      ]
+    },
+    {
+      "id": "mobile-development",
+      "name": "Mobile Development Agent",
+      "description": "Expert in Android, iOS, React Native, and Flutter mobile development",
+      "file": "agents/03-mobile-development.md",
+      "triggers": [
+        "mobile",
+        "android",
+        "ios",
+        "react native",
+        "flutter",
+        "kotlin",
+        "swift",
+        "app"
+      ]
+    },
+    {
+      "id": "devops-infrastructure",
+      "name": "DevOps & Infrastructure Agent",
+      "description": "Specialist in Docker, Kubernetes, AWS, Terraform, and CI/CD automation",
+      "file": "agents/04-devops-infrastructure.md",
+      "triggers": [
+        "devops",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "aws",
+        "terraform",
+        "ci/cd",
+        "deployment",
+        "infrastructure",
+        "cloud"
+      ]
+    },
+    {
+      "id": "ai-data-science",
+      "name": "AI & Data Science Agent",
+      "description": "Expert in machine learning, AI agents, data engineering, and analytics",
+      "file": "agents/05-ai-data-science.md",
+      "triggers": [
+        "ai",
+        "machine learning",
+        "ml",
+        "data science",
+        "data engineering",
+        "mlops",
+        "ai agent",
+        "prompt engineering",
+        "analytics"
+      ]
+    },
+    {
+      "id": "programming-languages",
+      "name": "Programming Languages Agent",
+      "description": "Expert in Python, Java, Go, Rust, C++, and computer science fundamentals",
+      "file": "agents/06-programming-languages.md",
+      "triggers": [
+        "python",
+        "java",
+        "go",
+        "golang",
+        "rust",
+        "c++",
+        "algorithm",
+        "data structure",
+        "programming"
+      ]
+    },
+    {
+      "id": "architecture-management",
+      "name": "Architecture & Management Agent",
+      "description": "Specialist in software architecture, system design, security, and engineering leadership",
+      "file": "agents/07-architecture-management.md",
+      "triggers": [
+        "architecture",
+        "system design",
+        "security",
+        "blockchain",
+        "product manager",
+        "engineering manager",
+        "scalability",
+        "design pattern"
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "name": "learn",
+      "description": "Start your developer roadmap journey - choose from 7 specialization paths",
+      "file": "commands/learn.md"
+    },
+    {
+      "name": "roadmap",
+      "description": "View comprehensive learning roadmap for any of 65+ technologies",
+      "file": "commands/roadmap.md",
+      "usage": "/roadmap [technology]"
+    },
+    {
+      "name": "assess",
+      "description": "Test your knowledge and get personalized recommendations",
+      "file": "commands/assess.md",
+      "usage": "/assess [technology] [level]"
+    },
+    {
+      "name": "resources",
+      "description": "Get curated learning resources (docs, tutorials, courses, books, projects)",
+      "file": "commands/resources.md",
+      "usage": "/resources [technology] [type]"
+    },
+    {
+      "name": "project",
+      "description": "Find hands-on project ideas by skill level to build your portfolio",
+      "file": "commands/project.md",
+      "usage": "/project [technology] [level]"
+    }
+  ],
+  "skills": [
+    {
+      "name": "react-development",
+      "description": "Build modern React applications with hooks and best practices",
+      "file": "skills/react-development/SKILL.md",
+      "agent": "frontend-development"
+    },
+    {
+      "name": "typescript-mastery",
+      "description": "Advanced TypeScript with generics, utility types, and type inference",
+      "file": "skills/typescript-mastery/SKILL.md",
+      "agent": "frontend-development"
+    },
+    {
+      "name": "css-modern",
+      "description": "Modern CSS with Flexbox, Grid, animations, and responsive design",
+      "file": "skills/css-modern/SKILL.md",
+      "agent": "frontend-development"
+    },
+    {
+      "name": "nextjs-fullstack",
+      "description": "Full-stack applications with Next.js App Router and Server Components",
+      "file": "skills/nextjs-fullstack/SKILL.md",
+      "agent": "frontend-development"
+    },
+    {
+      "name": "vue-development",
+      "description": "Vue 3 applications with Composition API and Pinia",
+      "file": "skills/vue-development/SKILL.md",
+      "agent": "frontend-development"
+    },
+    {
+      "name": "performance-optimization",
+      "description": "Web performance optimization and Core Web Vitals",
+      "file": "skills/performance-optimization/SKILL.md",
+      "agent": "frontend-development"
+    },
+    {
+      "name": "nodejs-api-development",
+      "description": "Build scalable Node.js/Express APIs with best practices",
+      "file": "skills/nodejs-api-development/SKILL.md",
+      "agent": "backend-development"
+    },
+    {
+      "name": "spring-boot-development",
+      "description": "Enterprise Java applications with Spring Boot",
+      "file": "skills/spring-boot-development/SKILL.md",
+      "agent": "backend-development"
+    },
+    {
+      "name": "graphql-api-design",
+      "description": "Modern GraphQL schemas and resolvers",
+      "file": "skills/graphql-api-design/SKILL.md",
+      "agent": "backend-development"
+    },
+    {
+      "name": "database-architecture",
+      "description": "SQL and NoSQL database design and optimization",
+      "file": "skills/database-architecture/SKILL.md",
+      "agent": "backend-development"
+    },
+    {
+      "name": "api-security",
+      "description": "Authentication, authorization, and API protection",
+      "file": "skills/api-security/SKILL.md",
+      "agent": "backend-development"
+    },
+    {
+      "name": "android-kotlin-development",
+      "description": "Modern Android apps with Jetpack Compose and Kotlin",
+      "file": "skills/android-kotlin-development/SKILL.md",
+      "agent": "mobile-development"
+    },
+    {
+      "name": "ios-swift-development",
+      "description": "Native iOS apps with SwiftUI and Swift",
+      "file": "skills/ios-swift-development/SKILL.md",
+      "agent": "mobile-development"
+    },
+    {
+      "name": "react-native-development",
+      "description": "Cross-platform mobile apps with React Native",
+      "file": "skills/react-native-development/SKILL.md",
+      "agent": "mobile-development"
+    },
+    {
+      "name": "flutter-development",
+      "description": "Cross-platform apps with Flutter and Dart",
+      "file": "skills/flutter-development/SKILL.md",
+      "agent": "mobile-development"
+    },
+    {
+      "name": "docker-containerization",
+      "description": "Building optimized Docker images and containers",
+      "file": "skills/docker-containerization/SKILL.md",
+      "agent": "devops-infrastructure"
+    },
+    {
+      "name": "kubernetes-orchestration",
+      "description": "K8s deployments, services, and management",
+      "file": "skills/kubernetes-orchestration/SKILL.md",
+      "agent": "devops-infrastructure"
+    },
+    {
+      "name": "aws-cloud-architecture",
+      "description": "Scalable AWS infrastructure design",
+      "file": "skills/aws-cloud-architecture/SKILL.md",
+      "agent": "devops-infrastructure"
+    },
+    {
+      "name": "terraform-iac",
+      "description": "Infrastructure automation with Terraform",
+      "file": "skills/terraform-iac/SKILL.md",
+      "agent": "devops-infrastructure"
+    },
+    {
+      "name": "ml-model-development",
+      "description": "Building and training ML models with Scikit-learn",
+      "file": "skills/ml-model-development/SKILL.md",
+      "agent": "ai-data-science"
+    },
+    {
+      "name": "ai-agent-systems",
+      "description": "Autonomous agent development with LangChain and RAG",
+      "file": "skills/ai-agent-systems/SKILL.md",
+      "agent": "ai-data-science"
+    },
+    {
+      "name": "python-development",
+      "description": "Modern Python with type hints and async/await",
+      "file": "skills/python-development/SKILL.md",
+      "agent": "programming-languages"
+    },
+    {
+      "name": "java-enterprise",
+      "description": "Enterprise Java with Spring Boot and microservices",
+      "file": "skills/java-enterprise/SKILL.md",
+      "agent": "programming-languages"
+    },
+    {
+      "name": "software-architecture",
+      "description": "Design patterns and architectural decisions",
+      "file": "skills/software-architecture/SKILL.md",
+      "agent": "architecture-management"
+    },
+    {
+      "name": "system-design",
+      "description": "Scalable distributed systems design",
+      "file": "skills/system-design/SKILL.md",
+      "agent": "architecture-management"
+    },
+    {
+      "name": "security-engineering",
+      "description": "Application and infrastructure security",
+      "file": "skills/security-engineering/SKILL.md",
+      "agent": "architecture-management"
+    },
+    {
+      "name": "database-optimization",
+      "description": "PostgreSQL, MongoDB, Redis tuning and optimization",
+      "file": "skills/database-optimization/SKILL.md",
+      "agent": "architecture-management"
+    }
+  ],
+  "hooks": {
+    "config": "hooks/hooks.json"
+  }
+}
