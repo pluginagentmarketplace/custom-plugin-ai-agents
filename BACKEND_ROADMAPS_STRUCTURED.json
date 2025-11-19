@@ -1,0 +1,1386 @@
+{
+  "roadmaps": {
+    "backend": {
+      "id": "backend",
+      "title": "Backend Developer Roadmap",
+      "url": "https://roadmap.sh/backend",
+      "description": "Step by step guide to becoming a backend developer",
+      "duration_months": 12,
+      "difficulty": "intermediate",
+      "prerequisites": ["Basic programming", "HTML/CSS knowledge"],
+      "learning_stages": [
+        {
+          "stage": 1,
+          "name": "Fundamentals",
+          "duration_weeks": 4,
+          "topics": [
+            "Internet & Web Fundamentals",
+            "HTTP/HTTPS protocols",
+            "TCP/IP basics",
+            "DNS resolution",
+            "Choose a Programming Language"
+          ]
+        },
+        {
+          "stage": 2,
+          "name": "Core Backend",
+          "duration_weeks": 8,
+          "topics": [
+            "Package Managers",
+            "Relational Databases",
+            "CRUD Operations",
+            "SQL Query Optimization",
+            "Indexes"
+          ]
+        },
+        {
+          "stage": 3,
+          "name": "Application Development",
+          "duration_weeks": 12,
+          "topics": [
+            "Web Frameworks",
+            "RESTful APIs",
+            "Authentication/Authorization",
+            "Middleware",
+            "Error Handling"
+          ]
+        },
+        {
+          "stage": 4,
+          "name": "Production Ready",
+          "duration_weeks": 12,
+          "topics": [
+            "Testing (Unit, Integration, E2E)",
+            "API Documentation",
+            "Security Hardening",
+            "Performance Optimization",
+            "Monitoring & Logging"
+          ]
+        },
+        {
+          "stage": 5,
+          "name": "Advanced Concepts",
+          "duration_weeks": 16,
+          "topics": [
+            "Microservices Architecture",
+            "Distributed Systems",
+            "WebSockets & Real-time",
+            "Event-Driven Architecture",
+            "Scalability Patterns"
+          ]
+        }
+      ],
+      "technologies": {
+        "languages": [
+          "Python",
+          "Node.js",
+          "Ruby",
+          "Java",
+          "Go",
+          "PHP",
+          "C#",
+          "Rust"
+        ],
+        "package_managers": [
+          "npm",
+          "pip",
+          "composer",
+          "gem",
+          "cargo"
+        ],
+        "databases": {
+          "relational": ["PostgreSQL", "MySQL", "Oracle", "SQL Server"],
+          "nosql": ["MongoDB", "Redis", "Cassandra", "DynamoDB"]
+        },
+        "frameworks": [
+          "Express.js",
+          "Django",
+          "Spring Boot",
+          "Laravel",
+          "Ruby on Rails",
+          "ASP.NET Core"
+        ],
+        "tools": [
+          "Postman",
+          "Swagger",
+          "Docker",
+          "Kubernetes",
+          "Jenkins",
+          "Git"
+        ]
+      },
+      "best_practices": [
+        "Start with fundamentals",
+        "Database first thinking",
+        "Security by default",
+        "Follow REST conventions",
+        "Version your APIs",
+        "Comprehensive testing",
+        "Keep documentation synchronized",
+        "Monitor from day one",
+        "Use proper Git workflows",
+        "Profile before optimizing"
+      ],
+      "common_projects": [
+        {
+          "level": "beginner",
+          "name": "Simple Blog API",
+          "features": ["CRUD posts", "Comments", "User management"]
+        },
+        {
+          "level": "intermediate",
+          "name": "Social Media Backend",
+          "features": ["Feeds", "Notifications", "Real-time updates"]
+        },
+        {
+          "level": "advanced",
+          "name": "E-commerce Platform",
+          "features": ["Complex transactions", "Inventory", "Recommendations"]
+        }
+      ],
+      "salary_ranges": {
+        "entry_level": "$70,000 - $90,000",
+        "mid_level": "$100,000 - $130,000",
+        "senior_level": "$140,000 - $180,000+",
+        "tech_hubs_premium": "30-50% higher"
+      }
+    },
+    "api_design": {
+      "id": "api_design",
+      "title": "API Design Roadmap",
+      "url": "https://roadmap.sh/api-design",
+      "description": "Step by step guide to learn how to design and build robust APIs",
+      "duration_weeks": 11,
+      "difficulty": "intermediate",
+      "prerequisites": ["HTTP fundamentals", "Backend development basics"],
+      "learning_stages": [
+        {
+          "stage": 1,
+          "name": "HTTP Fundamentals",
+          "duration_weeks": 2,
+          "topics": [
+            "HTTP methods (GET, POST, PUT, DELETE, PATCH)",
+            "Status codes (2xx, 3xx, 4xx, 5xx)",
+            "Headers and content negotiation",
+            "Request/response lifecycle"
+          ]
+        },
+        {
+          "stage": 2,
+          "name": "Networking Foundations",
+          "duration_weeks": 2,
+          "topics": [
+            "TCP/IP protocols",
+            "DNS resolution",
+            "SSL/TLS encryption",
+            "CORS and same-origin policy"
+          ]
+        },
+        {
+          "stage": 3,
+          "name": "API Architectural Styles",
+          "duration_weeks": 2,
+          "topics": [
+            "REST",
+            "GraphQL",
+            "gRPC",
+            "SOAP",
+            "WebSockets"
+          ]
+        },
+        {
+          "stage": 4,
+          "name": "RESTful API Design",
+          "duration_weeks": 1,
+          "topics": [
+            "URI design principles",
+            "Resource-oriented architecture",
+            "Stateless operations",
+            "Hierarchical resource structure"
+          ]
+        },
+        {
+          "stage": 5,
+          "name": "API Features",
+          "duration_weeks": 1,
+          "topics": [
+            "Versioning strategies",
+            "Pagination",
+            "Rate limiting",
+            "Caching",
+            "Compression"
+          ]
+        },
+        {
+          "stage": 6,
+          "name": "Authentication & Authorization",
+          "duration_weeks": 1,
+          "topics": [
+            "API keys",
+            "OAuth2",
+            "OpenID Connect",
+            "JWT tokens",
+            "Scope-based authorization"
+          ]
+        },
+        {
+          "stage": 7,
+          "name": "Security Practices",
+          "duration_weeks": 1,
+          "topics": [
+            "Input validation",
+            "SQL injection prevention",
+            "XSS protection",
+            "CSRF tokens",
+            "API gateway security"
+          ]
+        },
+        {
+          "stage": 8,
+          "name": "Documentation & Discovery",
+          "duration_weeks": 1,
+          "topics": [
+            "Swagger/OpenAPI",
+            "Documentation tools",
+            "Postman collections",
+            "Interactive explorers"
+          ]
+        },
+        {
+          "stage": 9,
+          "name": "Performance & Scalability",
+          "duration_weeks": 1,
+          "topics": [
+            "Caching strategies",
+            "Load balancing",
+            "Database optimization",
+            "Connection pooling",
+            "Monitoring"
+          ]
+        },
+        {
+          "stage": 10,
+          "name": "Integration Patterns",
+          "duration_weeks": 1,
+          "topics": [
+            "Synchronous integration",
+            "Asynchronous integration",
+            "Event-driven",
+            "Webhooks",
+            "Circuit breaker patterns"
+          ]
+        },
+        {
+          "stage": 11,
+          "name": "Standards & Compliance",
+          "duration_weeks": 1,
+          "topics": [
+            "GDPR",
+            "PCI DSS",
+            "HIPAA",
+            "CCPA",
+            "Industry-specific regulations"
+          ]
+        }
+      ],
+      "technologies": {
+        "api_styles": ["REST", "GraphQL", "gRPC", "WebSocket", "SOAP"],
+        "documentation": [
+          "Swagger/OpenAPI",
+          "AsyncAPI",
+          "Postman",
+          "API Blueprint"
+        ],
+        "testing": ["Postman", "REST Assured", "Apollo Testing"],
+        "security": ["OAuth2", "JWT", "API Gateway", "WAF"],
+        "monitoring": ["Datadog", "Apigee", "Kong", "Tyk"],
+        "message_queues": ["RabbitMQ", "Kafka", "SQS", "Pub/Sub"],
+        "gateways": ["Kong", "NGINX", "AWS API Gateway"]
+      },
+      "best_practices": [
+        "User-centric design",
+        "Consistent naming conventions",
+        "Plan versioning strategy",
+        "Return meaningful errors",
+        "Implement rate limiting",
+        "Comprehensive documentation",
+        "Security-first approach",
+        "Always paginate large datasets",
+        "Include HATEOAS links",
+        "Real-time monitoring"
+      ]
+    },
+    "nodejs": {
+      "id": "nodejs",
+      "title": "Node.js Developer Roadmap",
+      "url": "https://roadmap.sh/nodejs",
+      "description": "Step by step guide to becoming a modern Node.js developer",
+      "duration_months": 9,
+      "difficulty": "moderate",
+      "prerequisites": [
+        "JavaScript fundamentals",
+        "HTML/CSS basics",
+        "Version control"
+      ],
+      "learning_stages": [
+        {
+          "stage": 1,
+          "name": "Introduction & Fundamentals",
+          "duration_weeks": 2,
+          "topics": [
+            "Node.js architecture",
+            "Event loop mechanics",
+            "V8 engine",
+            "npm basics"
+          ]
+        },
+        {
+          "stage": 2,
+          "name": "ES6+ & Modern JavaScript",
+          "duration_weeks": 2,
+          "topics": [
+            "Arrow functions",
+            "Destructuring",
+            "Classes",
+            "Promises",
+            "Async/await"
+          ]
+        },
+        {
+          "stage": 3,
+          "name": "Module System",
+          "duration_weeks": 1,
+          "topics": [
+            "CommonJS",
+            "ES6 Modules",
+            "Creating modules",
+            "npm packaging"
+          ]
+        },
+        {
+          "stage": 4,
+          "name": "Error Handling",
+          "duration_weeks": 1,
+          "topics": [
+            "Try-catch blocks",
+            "Custom errors",
+            "Async error handling",
+            "Promise rejection",
+            "Error logging"
+          ]
+        },
+        {
+          "stage": 5,
+          "name": "Asynchronous Programming",
+          "duration_weeks": 2,
+          "topics": [
+            "Event emitters",
+            "Non-blocking operations",
+            "Callbacks",
+            "Promises",
+            "Async/await"
+          ]
+        },
+        {
+          "stage": 6,
+          "name": "File System Operations",
+          "duration_weeks": 1,
+          "topics": [
+            "Reading files",
+            "Writing files",
+            "Streams",
+            "Path manipulation"
+          ]
+        },
+        {
+          "stage": 7,
+          "name": "APIs & Express.js",
+          "duration_weeks": 3,
+          "topics": [
+            "HTTP server",
+            "Express.js",
+            "Routing",
+            "Middleware",
+            "REST API development"
+          ]
+        },
+        {
+          "stage": 8,
+          "name": "Template Engines",
+          "duration_weeks": 1,
+          "topics": [
+            "EJS",
+            "Pug",
+            "Handlebars",
+            "Dynamic rendering"
+          ]
+        },
+        {
+          "stage": 9,
+          "name": "Databases",
+          "duration_weeks": 2,
+          "topics": [
+            "PostgreSQL",
+            "MySQL",
+            "MongoDB",
+            "ORMs & Query builders",
+            "Connection pooling"
+          ]
+        },
+        {
+          "stage": 10,
+          "name": "Testing Frameworks",
+          "duration_weeks": 2,
+          "topics": [
+            "Jest",
+            "Mocha",
+            "Chai",
+            "Sinon",
+            "Supertest"
+          ]
+        },
+        {
+          "stage": 11,
+          "name": "Logging & Monitoring",
+          "duration_weeks": 1,
+          "topics": [
+            "Winston",
+            "Morgan",
+            "APM tools",
+            "Error tracking",
+            "Performance monitoring"
+          ]
+        },
+        {
+          "stage": 12,
+          "name": "Threading & Performance",
+          "duration_weeks": 1,
+          "topics": [
+            "Worker threads",
+            "Child processes",
+            "Cluster module",
+            "Resource management"
+          ]
+        },
+        {
+          "stage": 13,
+          "name": "Debugging & Optimization",
+          "duration_weeks": 1,
+          "topics": [
+            "Node Inspector",
+            "Memory leak detection",
+            "Profiling",
+            "Flame graphs",
+            "Performance benchmarking"
+          ]
+        }
+      ],
+      "technologies": {
+        "web_frameworks": [
+          "Express.js",
+          "Fastify",
+          "Koa",
+          "Nest.js",
+          "Next.js"
+        ],
+        "package_manager": ["npm", "yarn", "pnpm"],
+        "databases": {
+          "sql": ["PostgreSQL", "MySQL", "SQLite"],
+          "nosql": ["MongoDB", "Redis", "Cassandra"]
+        },
+        "orms": ["Sequelize", "TypeORM", "Prisma", "Knex.js"],
+        "testing": ["Jest", "Mocha", "Chai", "Supertest"],
+        "logging": ["Winston", "Bunyan", "Pino"],
+        "message_queues": ["RabbitMQ", "Kafka", "Redis Streams"]
+      },
+      "best_practices": [
+        "Master async patterns early",
+        "Never use synchronous operations",
+        "Comprehensive error handling",
+        "Modular architecture",
+        "Leverage middleware",
+        "Use connection pooling",
+        "Environment variables for config",
+        "Graceful shutdown handling",
+        "Rate limiting and throttling",
+        "APM monitoring"
+      ]
+    },
+    "spring_boot": {
+      "id": "spring_boot",
+      "title": "Spring Boot Roadmap",
+      "url": "https://roadmap.sh/spring-boot",
+      "description": "Step by step guide to becoming a Spring Boot developer",
+      "duration_months": 16,
+      "difficulty": "high",
+      "prerequisites": [
+        "Java programming",
+        "OOP concepts",
+        "Basic SQL"
+      ],
+      "learning_stages": [
+        {
+          "stage": 1,
+          "name": "Java Foundation",
+          "duration_weeks": 4,
+          "topics": [
+            "OOP principles",
+            "Collections",
+            "Exception handling",
+            "Lambdas and streams",
+            "Annotations"
+          ]
+        },
+        {
+          "stage": 2,
+          "name": "Build Tools & Project Structure",
+          "duration_weeks": 2,
+          "topics": [
+            "Maven",
+            "Gradle",
+            "Dependency management",
+            "Build profiles"
+          ]
+        },
+        {
+          "stage": 3,
+          "name": "Spring Framework Core",
+          "duration_weeks": 4,
+          "topics": [
+            "Dependency Injection",
+            "IoC containers",
+            "Bean lifecycle",
+            "Component scanning",
+            "Aspect-Oriented Programming"
+          ]
+        },
+        {
+          "stage": 4,
+          "name": "Spring Boot Basics",
+          "duration_weeks": 4,
+          "topics": [
+            "Auto-configuration",
+            "Starters",
+            "Embedded server",
+            "Actuators",
+            "Profiles"
+          ]
+        },
+        {
+          "stage": 5,
+          "name": "REST API Development",
+          "duration_weeks": 4,
+          "topics": [
+            "Controllers",
+            "Request/response handling",
+            "DTOs",
+            "Validation",
+            "Exception handling"
+          ]
+        },
+        {
+          "stage": 6,
+          "name": "Data Persistence",
+          "duration_weeks": 4,
+          "topics": [
+            "JPA & Hibernate",
+            "Spring Data JPA",
+            "Database migrations",
+            "Transactions",
+            "Query optimization"
+          ]
+        },
+        {
+          "stage": 7,
+          "name": "Security",
+          "duration_weeks": 4,
+          "topics": [
+            "Spring Security",
+            "Authentication",
+            "Authorization",
+            "JWT",
+            "OAuth2"
+          ]
+        },
+        {
+          "stage": 8,
+          "name": "Testing",
+          "duration_weeks": 3,
+          "topics": [
+            "JUnit 5",
+            "Mockito",
+            "Integration testing",
+            "Test containers",
+            "TDD"
+          ]
+        },
+        {
+          "stage": 9,
+          "name": "External API Integration",
+          "duration_weeks": 2,
+          "topics": [
+            "REST template",
+            "WebClient",
+            "Error handling",
+            "Retries",
+            "Circuit breaker"
+          ]
+        },
+        {
+          "stage": 10,
+          "name": "Advanced & Production",
+          "duration_weeks": 4,
+          "topics": [
+            "Microservices",
+            "Event sourcing",
+            "Kafka",
+            "GraphQL",
+            "Docker & Kubernetes"
+          ]
+        }
+      ],
+      "technologies": {
+        "java_version": ["Java 17 LTS", "Java 21 LTS"],
+        "spring_version": ["Spring Boot 3.x", "Spring 6.x"],
+        "databases": [
+          "MySQL",
+          "PostgreSQL",
+          "Oracle",
+          "MongoDB"
+        ],
+        "testing": ["JUnit 5", "Mockito", "Testcontainers", "AssertJ"],
+        "data_access": ["Spring Data JPA", "Hibernate", "Flyway"],
+        "security": ["Spring Security", "Spring OAuth2"],
+        "monitoring": ["Micrometer", "Prometheus", "Grafana"],
+        "message_queues": ["Spring Kafka", "Spring AMQP"]
+      },
+      "best_practices": [
+        "Leverage Spring Boot conventions",
+        "Constructor injection",
+        "Layered architecture",
+        "Early validation",
+        "Use DTOs for APIs",
+        "Structured logging",
+        "Explicit transaction boundaries",
+        "Spring Data derived queries",
+        "Global exception handling",
+        "Performance monitoring"
+      ]
+    },
+    "aspnet_core": {
+      "id": "aspnet_core",
+      "title": "ASP.NET Core Roadmap",
+      "url": "https://roadmap.sh/aspnet-core",
+      "description": "Step by step guide to becoming an ASP.NET Core developer",
+      "duration_months": 18,
+      "difficulty": "high",
+      "prerequisites": [
+        "C# programming",
+        "OOP concepts",
+        "Basic SQL"
+      ],
+      "learning_stages": [
+        {
+          "stage": 1,
+          "name": "Foundational Skills",
+          "duration_weeks": 3,
+          "topics": [
+            "Git",
+            "HTTP/HTTPS",
+            "SSL/TLS",
+            "Algorithms",
+            "SOLID principles"
+          ]
+        },
+        {
+          "stage": 2,
+          "name": "C# Language",
+          "duration_weeks": 5,
+          "topics": [
+            "Syntax and operators",
+            "OOP principles",
+            "Collections",
+            "LINQ",
+            "Async/await",
+            "Generics"
+          ]
+        },
+        {
+          "stage": 3,
+          "name": ".NET Core & ASP.NET Core",
+          "duration_weeks": 4,
+          "topics": [
+            ".NET runtime",
+            "CLI tools",
+            "Middleware",
+            "Dependency injection",
+            "Logging"
+          ]
+        },
+        {
+          "stage": 4,
+          "name": "Web Development",
+          "duration_weeks": 4,
+          "topics": [
+            "MVC architecture",
+            "Minimal APIs",
+            "Routing",
+            "Model binding",
+            "Validation"
+          ]
+        },
+        {
+          "stage": 5,
+          "name": "Data Access & Persistence",
+          "duration_weeks": 4,
+          "topics": [
+            "Entity Framework Core",
+            "Database migrations",
+            "LINQ queries",
+            "Relationships",
+            "Dapper"
+          ]
+        },
+        {
+          "stage": 6,
+          "name": "Authentication & Security",
+          "duration_weeks": 4,
+          "topics": [
+            "Identity",
+            "Authorization",
+            "JWT",
+            "OAuth2",
+            "CORS"
+          ]
+        },
+        {
+          "stage": 7,
+          "name": "API Development",
+          "duration_weeks": 4,
+          "topics": [
+            "REST design",
+            "gRPC",
+            "GraphQL",
+            "SignalR",
+            "Versioning"
+          ]
+        },
+        {
+          "stage": 8,
+          "name": "Testing",
+          "duration_weeks": 3,
+          "topics": [
+            "xUnit/NUnit",
+            "Moq",
+            "Integration testing",
+            "BDD with SpecFlow"
+          ]
+        },
+        {
+          "stage": 9,
+          "name": "DevOps & Deployment",
+          "duration_weeks": 4,
+          "topics": [
+            "Docker",
+            "Kubernetes",
+            "CI/CD",
+            "Azure",
+            "IaC"
+          ]
+        },
+        {
+          "stage": 10,
+          "name": "Advanced Topics",
+          "duration_weeks": 6,
+          "topics": [
+            "Microservices",
+            "Message brokers",
+            "Caching",
+            "Performance",
+            "Cloud deployment"
+          ]
+        }
+      ],
+      "technologies": {
+        "language": ["C# 11", "C# 12"],
+        "framework": ["ASP.NET Core 8", "ASP.NET Core 9"],
+        "databases": [
+          "SQL Server",
+          "PostgreSQL",
+          "MySQL",
+          "MongoDB"
+        ],
+        "orms": ["Entity Framework Core", "Dapper"],
+        "testing": ["xUnit", "NUnit", "Moq", "NSubstitute"],
+        "real_time": ["SignalR", "WebSockets"],
+        "apis": ["gRPC", "GraphQL", "REST"],
+        "cloud": ["Azure", "AWS", "GCP"],
+        "message_queues": ["RabbitMQ", "Kafka", "Azure Service Bus"]
+      },
+      "best_practices": [
+        "Use built-in DI",
+        "Async from the start",
+        "SOLID principles",
+        "Entity Framework fluent API",
+        "Use Minimal APIs",
+        "Early validation",
+        "Structured logging",
+        "Configuration management",
+        "Global exception middleware",
+        "Application Insights monitoring"
+      ]
+    },
+    "laravel": {
+      "id": "laravel",
+      "title": "Laravel Roadmap",
+      "url": "https://roadmap.sh/laravel",
+      "description": "Step by step guide to mastering Laravel",
+      "duration_months": 12,
+      "difficulty": "moderate",
+      "prerequisites": [
+        "PHP basics",
+        "HTML/CSS",
+        "SQL",
+        "JavaScript"
+      ],
+      "learning_stages": [
+        {
+          "stage": 1,
+          "name": "Beginner Foundation",
+          "duration_weeks": 4,
+          "topics": [
+            "Routing",
+            "Controllers",
+            "Blade templating",
+            "Eloquent ORM basics",
+            "Database migrations",
+            "CRUD operations"
+          ]
+        },
+        {
+          "stage": 2,
+          "name": "Advanced Beginner",
+          "duration_weeks": 6,
+          "topics": [
+            "Middleware",
+            "Advanced routing",
+            "Form validation",
+            "Relationships",
+            "Query optimization",
+            "File uploads",
+            "Testing"
+          ]
+        },
+        {
+          "stage": 3,
+          "name": "Mid-Level",
+          "duration_weeks": 6,
+          "topics": [
+            "Service container",
+            "Events",
+            "Queues & jobs",
+            "Caching",
+            "Broadcasting",
+            "Package development"
+          ]
+        },
+        {
+          "stage": 4,
+          "name": "Senior/Advanced",
+          "duration_weeks": 8,
+          "topics": [
+            "Custom packages",
+            "Policies",
+            "Roles & permissions",
+            "Performance optimization",
+            "Domain-Driven Design",
+            "Deployment"
+          ]
+        }
+      ],
+      "technologies": {
+        "framework": ["Laravel 11.x"],
+        "php": ["PHP 8.2", "PHP 8.3"],
+        "templating": ["Blade"],
+        "orm": ["Eloquent"],
+        "testing": ["PHPUnit", "Pest"],
+        "databases": ["MySQL", "PostgreSQL", "SQLite"],
+        "cache": ["Redis", "Memcached"],
+        "authentication": ["Laravel Sanctum", "Passport"],
+        "real_time": ["Laravel Echo", "Pusher", "Laravel WebSockets"],
+        "task_queue": ["Horizon", "Redis Queue"]
+      },
+      "best_practices": [
+        "Follow MVC pattern",
+        "Define relationships in models",
+        "Eager load relationships",
+        "Use form requests",
+        "Middleware for cross-cutting concerns",
+        "Service layer pattern",
+        "Repository pattern",
+        "Comprehensive testing",
+        "Queue long operations",
+        "Proper environment configuration"
+      ]
+    },
+    "php": {
+      "id": "php",
+      "title": "PHP Roadmap",
+      "url": "https://roadmap.sh/php",
+      "description": "Step by step guide to learning PHP",
+      "duration_months": 10,
+      "difficulty": "gentle",
+      "prerequisites": [
+        "HTML/CSS basics",
+        "Basic programming logic"
+      ],
+      "learning_stages": [
+        {
+          "stage": 1,
+          "name": "Web Fundamentals",
+          "duration_weeks": 2,
+          "topics": [
+            "HTTP protocols",
+            "Client-server model",
+            "Request/response",
+            "Static vs dynamic content"
+          ]
+        },
+        {
+          "stage": 2,
+          "name": "Version Control",
+          "duration_weeks": 1,
+          "topics": [
+            "Git basics",
+            "GitHub",
+            "Branching",
+            "Pull requests"
+          ]
+        },
+        {
+          "stage": 3,
+          "name": "Front-End Basics",
+          "duration_weeks": 2,
+          "topics": [
+            "HTML (semantic)",
+            "CSS",
+            "JavaScript",
+            "Form handling"
+          ]
+        },
+        {
+          "stage": 4,
+          "name": "Database Fundamentals",
+          "duration_weeks": 3,
+          "topics": [
+            "SQL basics",
+            "CRUD operations",
+            "Relationships",
+            "Joins",
+            "Transactions"
+          ]
+        },
+        {
+          "stage": 5,
+          "name": "PHP Core Programming",
+          "duration_weeks": 4,
+          "topics": [
+            "Syntax",
+            "Variables & operators",
+            "Control structures",
+            "Functions",
+            "String/array operations",
+            "File operations"
+          ]
+        },
+        {
+          "stage": 6,
+          "name": "Object-Oriented Programming",
+          "duration_weeks": 4,
+          "topics": [
+            "Classes & objects",
+            "Inheritance",
+            "Interfaces",
+            "Traits",
+            "Magic methods",
+            "Visibility"
+          ]
+        },
+        {
+          "stage": 7,
+          "name": "Design Patterns & Architecture",
+          "duration_weeks": 4,
+          "topics": [
+            "MVC architecture",
+            "Design patterns",
+            "Repository pattern",
+            "Service layer",
+            "Dependency injection",
+            "SOLID principles"
+          ]
+        },
+        {
+          "stage": 8,
+          "name": "Modern PHP Development",
+          "duration_weeks": 4,
+          "topics": [
+            "PHP 8+ features",
+            "Type declarations",
+            "Composer",
+            "PSR standards",
+            "Testing (PHPUnit)",
+            "Performance optimization"
+          ]
+        }
+      ],
+      "technologies": {
+        "php_version": ["PHP 8.1", "PHP 8.2", "PHP 8.3"],
+        "package_manager": ["Composer"],
+        "databases": ["MySQL", "PostgreSQL", "MariaDB"],
+        "frameworks": ["Laravel", "Symfony", "CodeIgniter"],
+        "testing": ["PHPUnit", "Pest"],
+        "web_servers": ["Nginx", "Apache", "Caddy"],
+        "caching": ["Redis", "Memcached"],
+        "orms": ["Eloquent", "Doctrine"],
+        "development": ["Docker", "Docker Compose", "Sail"]
+      },
+      "best_practices": [
+        "Use PHP 8+",
+        "Leverage frameworks",
+        "Type declarations",
+        "Use Composer",
+        "OOP over procedural",
+        "Follow PSR standards",
+        "Proper error handling",
+        "Security first",
+        "Comprehensive testing",
+        "Environment separation"
+      ]
+    },
+    "graphql": {
+      "id": "graphql",
+      "title": "GraphQL Roadmap",
+      "url": "https://roadmap.sh/graphql",
+      "description": "Step by step guide to learning GraphQL",
+      "duration_weeks": 9,
+      "difficulty": "moderate",
+      "prerequisites": [
+        "API fundamentals",
+        "JavaScript/Node.js",
+        "Database concepts",
+        "HTTP protocol"
+      ],
+      "learning_stages": [
+        {
+          "stage": 1,
+          "name": "GraphQL Introduction",
+          "duration_weeks": 1,
+          "topics": [
+            "GraphQL vs REST",
+            "Query language overview",
+            "Schema definition",
+            "Type system",
+            "Scalar types"
+          ]
+        },
+        {
+          "stage": 2,
+          "name": "Queries",
+          "duration_weeks": 1,
+          "topics": [
+            "Query syntax",
+            "Field selection",
+            "Variables",
+            "Fragments",
+            "Directives",
+            "Introspection"
+          ]
+        },
+        {
+          "stage": 3,
+          "name": "Mutations",
+          "duration_weeks": 1,
+          "topics": [
+            "Mutation syntax",
+            "CRUD with mutations",
+            "Input types",
+            "Return types",
+            "Error handling"
+          ]
+        },
+        {
+          "stage": 4,
+          "name": "Subscriptions",
+          "duration_weeks": 1,
+          "topics": [
+            "WebSocket protocol",
+            "Subscription syntax",
+            "Real-time data",
+            "Event filtering",
+            "Connection management"
+          ]
+        },
+        {
+          "stage": 5,
+          "name": "Schema Design",
+          "duration_weeks": 1,
+          "topics": [
+            "Object types",
+            "Input types",
+            "Enums",
+            "Unions & interfaces",
+            "Custom scalars"
+          ]
+        },
+        {
+          "stage": 6,
+          "name": "Validation & Execution",
+          "duration_weeks": 1,
+          "topics": [
+            "Query validation",
+            "Type checking",
+            "Directives",
+            "Query complexity",
+            "Resolver execution"
+          ]
+        },
+        {
+          "stage": 7,
+          "name": "Server Implementation",
+          "duration_weeks": 1,
+          "topics": [
+            "Apollo Server setup",
+            "GraphQL Yoga",
+            "Authentication",
+            "Authorization",
+            "Middleware"
+          ]
+        },
+        {
+          "stage": 8,
+          "name": "Pagination & Filtering",
+          "duration_weeks": 1,
+          "topics": [
+            "Offset pagination",
+            "Cursor pagination",
+            "Filtering",
+            "Sorting",
+            "Relay connection model"
+          ]
+        },
+        {
+          "stage": 9,
+          "name": "Frontend Integration & Advanced",
+          "duration_weeks": 1,
+          "topics": [
+            "Apollo Client",
+            "Relay",
+            "Caching",
+            "Performance optimization",
+            "Monitoring"
+          ]
+        }
+      ],
+      "technologies": {
+        "server_frameworks": [
+          "Apollo Server",
+          "GraphQL Yoga",
+          "Mercurius",
+          "graphql-core"
+        ],
+        "frontend_clients": [
+          "Apollo Client",
+          "Relay",
+          "Urql",
+          "graphql-request"
+        ],
+        "languages": [
+          "Node.js",
+          "Python",
+          "Java",
+          ".NET",
+          "Go",
+          "Rust"
+        ],
+        "databases": [
+          "PostgreSQL",
+          "MongoDB",
+          "MySQL"
+        ],
+        "monitoring": ["Apollo Studio", "GraphQL Voyager"],
+        "testing": ["Jest", "Mocha"],
+        "real_time": ["WebSockets", "Server-Sent Events"]
+      },
+      "best_practices": [
+        "Design for queries not documentation",
+        "Use input types",
+        "Prevent N+1 queries",
+        "Always paginate",
+        "Query complexity limits",
+        "Field-level authorization",
+        "Error standardization",
+        "Client-side caching",
+        "Monitor performance",
+        "Test subscriptions carefully"
+      ]
+    }
+  },
+  "learning_paths": {
+    "beginner_to_intermediate": {
+      "duration_months": 6,
+      "roadmaps": ["backend", "api_design"],
+      "description": "Foundation in backend development and API design principles",
+      "monthly_breakdown": [
+        "Month 1: Choose language, master fundamentals",
+        "Month 2: Learn web framework basics",
+        "Month 3: Database design and optimization",
+        "Month 4: REST API principles and design",
+        "Month 5: Build complete CRUD API project",
+        "Month 6: Security, testing, and deployment"
+      ]
+    },
+    "javascript_specialist": {
+      "duration_months": 9,
+      "roadmaps": ["nodejs", "api_design", "graphql"],
+      "description": "JavaScript/Node.js backend developer with GraphQL expertise",
+      "focus_areas": [
+        "Event-driven architecture",
+        "Express.js mastery",
+        "Real-time applications",
+        "Modern JavaScript patterns"
+      ]
+    },
+    "java_specialist": {
+      "duration_months": 12,
+      "roadmaps": ["spring_boot", "api_design"],
+      "description": "Spring Boot and enterprise Java backend development",
+      "focus_areas": [
+        "Spring ecosystem",
+        "Microservices patterns",
+        "Enterprise architecture",
+        "Performance optimization"
+      ]
+    },
+    "csharp_specialist": {
+      "duration_months": 12,
+      "roadmaps": ["aspnet_core", "api_design"],
+      "description": "ASP.NET Core and Microsoft stack development",
+      "focus_areas": [
+        "C# language mastery",
+        "Cloud-native development",
+        "Azure ecosystem",
+        "Entity Framework"
+      ]
+    },
+    "php_specialist": {
+      "duration_months": 10,
+      "roadmaps": ["php", "laravel"],
+      "description": "Modern PHP development with Laravel framework",
+      "focus_areas": [
+        "PHP 8+ features",
+        "Eloquent ORM",
+        "Rapid development",
+        "SaaS applications"
+      ]
+    },
+    "api_expert": {
+      "duration_months": 12,
+      "roadmaps": ["api_design", "graphql", "backend"],
+      "description": "API design and development across multiple architectures",
+      "focus_areas": [
+        "REST vs GraphQL",
+        "API versioning",
+        "Performance optimization",
+        "Security hardening"
+      ]
+    }
+  },
+  "technology_matrix": {
+    "databases": {
+      "relational": {
+        "PostgreSQL": {
+          "roadmaps": ["backend", "nodejs", "spring_boot", "aspnet_core"],
+          "maturity": "production-ready",
+          "use_cases": ["OLTP", "ACID transactions", "Complex queries"]
+        },
+        "MySQL": {
+          "roadmaps": ["backend", "php", "laravel"],
+          "maturity": "production-ready",
+          "use_cases": ["Web applications", "Content management"]
+        },
+        "Oracle": {
+          "roadmaps": ["spring_boot", "aspnet_core"],
+          "maturity": "enterprise",
+          "use_cases": ["Enterprise systems", "Legacy systems"]
+        }
+      },
+      "nosql": {
+        "MongoDB": {
+          "roadmaps": ["backend", "nodejs", "spring_boot"],
+          "maturity": "production-ready",
+          "use_cases": ["Document storage", "Flexible schema"]
+        },
+        "Redis": {
+          "roadmaps": ["backend", "nodejs", "spring_boot", "laravel"],
+          "maturity": "production-ready",
+          "use_cases": ["Caching", "Sessions", "Message queues"]
+        }
+      }
+    },
+    "frameworks": {
+      "nodejs": {
+        "primary": "Express.js",
+        "alternatives": ["Fastify", "Koa", "Nest.js"],
+        "learning_curve": "moderate",
+        "performance": "very-high"
+      },
+      "java": {
+        "primary": "Spring Boot",
+        "alternatives": ["Quarkus", "Micronaut"],
+        "learning_curve": "high",
+        "performance": "high"
+      },
+      "csharp": {
+        "primary": "ASP.NET Core",
+        "alternatives": ["Nancy", "Servicestack"],
+        "learning_curve": "moderate",
+        "performance": "very-high"
+      },
+      "php": {
+        "primary": "Laravel",
+        "alternatives": ["Symfony", "CodeIgniter"],
+        "learning_curve": "low",
+        "performance": "moderate"
+      }
+    }
+  },
+  "summary_statistics": {
+    "total_roadmaps": 8,
+    "total_learning_weeks": 78,
+    "total_learning_months": 18,
+    "common_topics": [
+      "HTTP protocols",
+      "Databases (SQL/NoSQL)",
+      "REST API design",
+      "Authentication/Authorization",
+      "Testing",
+      "Deployment",
+      "Monitoring",
+      "Security",
+      "Performance optimization"
+    ],
+    "universal_technologies": [
+      "Git",
+      "PostgreSQL/MySQL",
+      "Docker",
+      "Redis",
+      "Kubernetes"
+    ],
+    "average_learning_timeline": {
+      "beginner_to_junior": "6-9 months",
+      "junior_to_mid": "6-12 months",
+      "mid_to_senior": "12-24 months",
+      "senior_to_expert": "24+ months"
+    }
+  }
+}

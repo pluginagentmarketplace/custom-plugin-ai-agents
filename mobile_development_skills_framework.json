@@ -1,0 +1,821 @@
+{
+  "frameworks": {
+    "android": {
+      "name": "Android Development",
+      "primary_language": "Kotlin",
+      "secondary_language": "Java",
+      "difficulty_level": "Intermediate",
+      "learning_duration_weeks": 24,
+      "market_demand": "Very High",
+      "job_prospects": "Excellent",
+      "key_skills": [
+        "Kotlin Programming",
+        "Activity & Fragment Lifecycle",
+        "Material Design Implementation",
+        "Jetpack Components (MVVM, LiveData, Room)",
+        "Coroutines & Async Programming",
+        "Retrofit/OkHttp Networking",
+        "RecyclerView Implementation",
+        "SQLite Database Design",
+        "Dependency Injection (Dagger/Hilt)",
+        "Testing with Espresso & JUnit",
+        "Security & Encryption",
+        "Performance Optimization",
+        "Firebase Integration"
+      ],
+      "core_concepts": {
+        "fundamentals": [
+          "Android Studio IDE",
+          "Emulator & ADB",
+          "Project Structure",
+          "Gradle Build System",
+          "Manifest Configuration"
+        ],
+        "ui_components": [
+          "Views & ViewGroups",
+          "Layouts (Linear, Relative, Constraint)",
+          "RecyclerView for Lists",
+          "Fragments",
+          "Custom Views",
+          "Material Design Components"
+        ],
+        "data_management": [
+          "SharedPreferences",
+          "SQLite & Room Database",
+          "File I/O",
+          "Content Providers",
+          "JSON Parsing (Gson/Moshi)"
+        ],
+        "networking": [
+          "HTTP Requests",
+          "Retrofit Library",
+          "OkHttp Interceptors",
+          "Error Handling",
+          "Token Management"
+        ],
+        "architecture": [
+          "MVVM Pattern",
+          "Clean Architecture",
+          "Repository Pattern",
+          "Dependency Injection",
+          "LiveData & StateFlow"
+        ],
+        "advanced": [
+          "Kotlin Coroutines",
+          "Flow & Channel",
+          "Custom Native Modules",
+          "Performance Profiling",
+          "Security Implementation"
+        ]
+      },
+      "key_libraries": [
+        "Jetpack (Room, LiveData, ViewModel, Navigation)",
+        "Retrofit + OkHttp",
+        "Dagger/Hilt",
+        "Glide (Image Loading)",
+        "Firebase",
+        "Gson/Moshi",
+        "JUnit & Mockito"
+      ],
+      "common_projects": [
+        "Todo/Notes Application",
+        "Social Media Feed",
+        "E-Commerce Platform",
+        "Chat Application",
+        "Weather App",
+        "Music Streaming Service",
+        "Photo Gallery & Editor"
+      ],
+      "best_practices": [
+        "Always use MVVM architecture",
+        "Implement proper lifecycle management",
+        "Use coroutines for all I/O operations",
+        "Never block main thread",
+        "Implement security best practices",
+        "Test with 70%+ coverage",
+        "Monitor memory usage",
+        "Use ProGuard/R8 for production builds"
+      ]
+    },
+    "ios": {
+      "name": "iOS Development",
+      "primary_language": "Swift",
+      "secondary_language": "Objective-C (legacy)",
+      "difficulty_level": "Intermediate",
+      "learning_duration_weeks": 24,
+      "market_demand": "Very High",
+      "job_prospects": "Excellent",
+      "key_skills": [
+        "Swift Programming",
+        "UIKit or SwiftUI (modern choice)",
+        "Auto Layout & Constraints",
+        "Navigation & Routing",
+        "Core Data Management",
+        "URLSession Networking",
+        "Table & Collection Views",
+        "Grand Central Dispatch (GCD)",
+        "Combine Framework",
+        "async/await Concurrency",
+        "Security & Keychain",
+        "App Signing & Provisioning",
+        "XCTest Framework"
+      ],
+      "core_concepts": {
+        "fundamentals": [
+          "Swift Language Basics",
+          "Optionals & Nil Safety",
+          "Functions & Closures",
+          "Protocols",
+          "Enums & Structs"
+        ],
+        "ui_frameworks": [
+          "UIKit (traditional)",
+          "SwiftUI (modern, recommended)",
+          "Auto Layout",
+          "Storyboards & XIB Files",
+          "View Controllers"
+        ],
+        "navigation": [
+          "Navigation Controllers",
+          "Tab Bar Controllers",
+          "Navigation Stack",
+          "Deep Linking",
+          "Segues"
+        ],
+        "data_persistence": [
+          "UserDefaults",
+          "Core Data",
+          "CloudKit",
+          "File Management",
+          "Keychain for Secrets"
+        ],
+        "networking": [
+          "URLSession",
+          "Codable for JSON",
+          "Error Handling",
+          "Cancellation & Retries",
+          "Interceptors"
+        ],
+        "architecture": [
+          "MVVM Pattern",
+          "Model-View-ViewModel",
+          "Dependency Injection",
+          "Repository Pattern",
+          "Service Locator Pattern"
+        ],
+        "concurrency": [
+          "Combine Framework",
+          "async/await",
+          "Structured Concurrency",
+          "Publishers & Subscribers",
+          "Swift Actors"
+        ]
+      },
+      "key_libraries": [
+        "SwiftUI",
+        "Combine",
+        "Core Data",
+        "URLSession",
+        "Vision (ML integration)",
+        "CloudKit",
+        "XCTest"
+      ],
+      "common_projects": [
+        "Weather Application",
+        "Todo/Productivity Apps",
+        "Photo Sharing",
+        "Music Player",
+        "News Reader",
+        "Messaging App",
+        "Location-Based Services",
+        "Health Tracking"
+      ],
+      "best_practices": [
+        "Use SwiftUI for new projects",
+        "MVVM with proper bindings",
+        "Leverage Swift optionals",
+        "Use async/await for concurrency",
+        "Implement Keychain for sensitive data",
+        "Test with 70%+ coverage",
+        "Use Instruments for profiling",
+        "Follow Apple's design guidelines"
+      ]
+    },
+    "react_native": {
+      "name": "React Native Development",
+      "primary_language": "JavaScript/TypeScript",
+      "secondary_language": "JavaScript",
+      "difficulty_level": "Intermediate",
+      "learning_duration_weeks": 20,
+      "market_demand": "High",
+      "job_prospects": "Good",
+      "key_skills": [
+        "React Fundamentals",
+        "TypeScript",
+        "React Native Components",
+        "React Navigation",
+        "State Management (Context/Redux/Zustand)",
+        "Networking & APIs",
+        "Async Storage",
+        "Native Modules",
+        "Platform-Specific Code",
+        "Performance Optimization",
+        "Testing & E2E",
+        "Firebase Integration",
+        "Deployment to App Stores"
+      ],
+      "core_concepts": {
+        "fundamentals": [
+          "JavaScript ES6+ Syntax",
+          "React Hooks",
+          "JSX/TSX",
+          "Component Lifecycle",
+          "State & Props"
+        ],
+        "core_components": [
+          "View, Text, ScrollView",
+          "FlatList & SectionList",
+          "TouchableOpacity & Pressable",
+          "Image & ImageBackground",
+          "TextInput & Picker",
+          "Modal"
+        ],
+        "styling": [
+          "StyleSheet API",
+          "Flexbox Layout",
+          "Responsive Design",
+          "Platform-Specific Styles",
+          "Theme Management"
+        ],
+        "navigation": [
+          "React Navigation",
+          "Stack Navigator",
+          "Tab Navigator",
+          "Drawer Navigator",
+          "Deep Linking"
+        ],
+        "state_management": [
+          "Context API",
+          "Redux",
+          "Redux Saga",
+          "Zustand",
+          "MobX"
+        ],
+        "networking": [
+          "fetch API",
+          "Axios",
+          "Error Handling",
+          "Request Interceptors",
+          "Token Management"
+        ],
+        "native_features": [
+          "Sensors & Accelerometer",
+          "Camera & Photo Library",
+          "Contacts & Permissions",
+          "Geolocation",
+          "Push Notifications"
+        ]
+      },
+      "key_libraries": [
+        "React Native",
+        "React Navigation",
+        "Expo (optional, for rapid development)",
+        "Redux Toolkit",
+        "React Hook Form",
+        "Firebase",
+        "Jest",
+        "Detox (E2E Testing)"
+      ],
+      "common_projects": [
+        "Social Media Feed",
+        "Fitness Tracking App",
+        "Ride-Sharing Service",
+        "Food Delivery App",
+        "News Aggregator",
+        "E-Commerce Platform",
+        "Streaming Service",
+        "Travel Booking",
+        "Banking App"
+      ],
+      "best_practices": [
+        "Use TypeScript for type safety",
+        "Optimize FlatList rendering",
+        "Implement proper navigation structure",
+        "Use Redux for complex state",
+        "Secure token storage with secure storage library",
+        "Test with Jest & Detox",
+        "Monitor performance with Flipper",
+        "Use code splitting for bundle optimization"
+      ]
+    },
+    "flutter": {
+      "name": "Flutter Development",
+      "primary_language": "Dart",
+      "secondary_language": "Dart",
+      "difficulty_level": "Intermediate",
+      "learning_duration_weeks": 20,
+      "market_demand": "High",
+      "job_prospects": "Very Good",
+      "key_skills": [
+        "Dart Programming",
+        "Flutter Widgets",
+        "Material Design",
+        "Navigation & Routing",
+        "State Management (Provider/BLoC/Riverpod)",
+        "HTTP Networking",
+        "Local Storage (Hive/SharedPreferences)",
+        "SQLite Database",
+        "Form Validation",
+        "Animation & Gestures",
+        "Testing Framework",
+        "Firebase Integration",
+        "Performance Optimization",
+        "Multi-platform Deployment"
+      ],
+      "core_concepts": {
+        "fundamentals": [
+          "Dart Syntax",
+          "Functions & Closures",
+          "OOP Concepts",
+          "Async/Await",
+          "Error Handling"
+        ],
+        "widgets": [
+          "Stateless Widgets",
+          "Stateful Widgets",
+          "Material Widgets",
+          "Cupertino Widgets (iOS-style)",
+          "Custom Widgets"
+        ],
+        "layouts": [
+          "Row & Column",
+          "Expanded & Flexible",
+          "Stack & Positioned",
+          "GridView",
+          "ListView",
+          "Custom Layouts"
+        ],
+        "styling": [
+          "Theme & ThemeData",
+          "Colors & Gradients",
+          "Typography",
+          "Material Design 3",
+          "Custom Painting"
+        ],
+        "navigation": [
+          "Navigator API",
+          "Named Routes",
+          "Deep Linking",
+          "Custom Route Transitions",
+          "GoRouter Package"
+        ],
+        "state_management": [
+          "setState",
+          "Provider Package",
+          "BLoC Pattern",
+          "Riverpod",
+          "GetX"
+        ],
+        "data_persistence": [
+          "SharedPreferences",
+          "Hive Database",
+          "SQLite",
+          "File Storage",
+          "Firebase"
+        ],
+        "networking": [
+          "HTTP Package",
+          "Dio Package",
+          "JSON Serialization",
+          "Error Handling",
+          "Caching"
+        ]
+      },
+      "key_libraries": [
+        "Flutter SDK",
+        "Provider",
+        "BLoC",
+        "Riverpod",
+        "http or Dio",
+        "Hive",
+        "Firebase",
+        "flutter_test"
+      ],
+      "common_projects": [
+        "Cross-Platform Todo App",
+        "Weather Application",
+        "E-Commerce Platform",
+        "Chat Application",
+        "News Reader",
+        "Productivity App",
+        "Streaming Service",
+        "Health/Fitness Tracker",
+        "Desktop Application"
+      ],
+      "best_practices": [
+        "Use Provider for state management in most cases",
+        "Leverage hot reload during development",
+        "Implement Material Design 3 patterns",
+        "Separate concerns into layers",
+        "Optimize rebuild performance",
+        "Test with 70%+ coverage",
+        "Profile with DevTools",
+        "Use semantic widgets for accessibility"
+      ]
+    },
+    "kotlin": {
+      "name": "Kotlin Programming Language",
+      "primary_context": "Android Development",
+      "difficulty_level": "Beginner to Intermediate",
+      "learning_duration_weeks": 8,
+      "market_demand": "High",
+      "job_prospects": "Excellent (as Android language)",
+      "key_skills": [
+        "Kotlin Syntax",
+        "Null Safety",
+        "Functions & Lambdas",
+        "Object-Oriented Programming",
+        "Functional Programming",
+        "Extension Functions",
+        "Coroutines",
+        "Collections & Sequences",
+        "Scope Functions (let, apply, run)",
+        "Sealed Classes",
+        "Delegation",
+        "Testing with Kotest"
+      ],
+      "core_concepts": {
+        "syntax_fundamentals": [
+          "Variables (var, val)",
+          "Type Inference",
+          "Type Annotations",
+          "String Templates",
+          "Raw Strings"
+        ],
+        "functions": [
+          "Named Parameters",
+          "Default Parameters",
+          "Varargs",
+          "Return Types",
+          "Single Expression Functions",
+          "Lambda Expressions"
+        ],
+        "oop": [
+          "Classes & Constructors",
+          "Primary Constructors",
+          "Inheritance",
+          "Interfaces",
+          "Abstract Classes",
+          "Visibility Modifiers"
+        ],
+        "null_safety": [
+          "Non-nullable Types",
+          "Nullable Types (?)",
+          "Safe Call Operator (?.)",
+          "Elvis Operator (?:)",
+          "Not-null Assertion (!!))",
+          "Safe Casting"
+        ],
+        "functional": [
+          "Higher-Order Functions",
+          "Extension Functions",
+          "Scope Functions (let, apply, run, also, with)",
+          "map, filter, reduce",
+          "Inline Functions",
+          "Reified Type Parameters"
+        ],
+        "advanced": [
+          "Sealed Classes",
+          "Data Classes",
+          "Delegation",
+          "Operator Overloading",
+          "Property Delegation",
+          "DSL Creation"
+        ]
+      },
+      "key_libraries": [
+        "Kotlin Standard Library",
+        "Kotlin Coroutines",
+        "Kotlin Serialization",
+        "Kotest (Testing)",
+        "Mockk (Mocking)"
+      ],
+      "common_use_cases": [
+        "Android Application Development",
+        "Backend Services",
+        "Command-Line Tools",
+        "Multiplatform Mobile Development",
+        "Server-Side Applications",
+        "Scripting"
+      ],
+      "best_practices": [
+        "Use non-nullable types by default",
+        "Prefer val over var for immutability",
+        "Use scope functions for cleaner code",
+        "Leverage type inference to reduce verbosity",
+        "Extension functions for API clarity",
+        "Sealed classes for type safety",
+        "Coroutines for async operations",
+        "Data classes for value holders"
+      ]
+    },
+    "swift": {
+      "name": "Swift Programming Language",
+      "primary_context": "iOS/macOS Development",
+      "difficulty_level": "Intermediate",
+      "learning_duration_weeks": 10,
+      "market_demand": "High",
+      "job_prospects": "Excellent (as iOS language)",
+      "key_skills": [
+        "Swift Syntax",
+        "Type System",
+        "Functions & Closures",
+        "Object-Oriented Programming",
+        "Protocol-Oriented Programming",
+        "Memory Management (ARC)",
+        "Error Handling",
+        "Generics",
+        "Properties & Computed Properties",
+        "Extensions",
+        "Testing with XCTest",
+        "Concurrency with async/await"
+      ],
+      "core_concepts": {
+        "fundamentals": [
+          "Constants & Variables",
+          "Type Annotations & Inference",
+          "Basic Data Types",
+          "Collections (Array, Dictionary, Set)",
+          "String Manipulation"
+        ],
+        "control_flow": [
+          "if-else & switch Statements",
+          "for/while Loops",
+          "Guard Statements",
+          "Range Operations",
+          "Pattern Matching"
+        ],
+        "functions": [
+          "Function Declaration",
+          "Return Types",
+          "Default Parameters",
+          "Variadic Parameters",
+          "Escaping Closures",
+          "Trailing Closures"
+        ],
+        "oop": [
+          "Classes vs Structs",
+          "Inheritance",
+          "Initializers",
+          "Deinitializers",
+          "Computed Properties",
+          "Property Observers"
+        ],
+        "protocols": [
+          "Protocol Declaration",
+          "Protocol Conformance",
+          "Delegate Pattern",
+          "Protocol Extensions",
+          "Protocol Composition",
+          "Generic Protocols"
+        ],
+        "advanced": [
+          "Generics & Constraints",
+          "Associated Types",
+          "Type Erasure",
+          "Operator Overloading",
+          "Custom Operators",
+          "Reflection with Mirror"
+        ],
+        "concurrency": [
+          "async/await",
+          "Structured Concurrency",
+          "Actor Model",
+          "Task Groups",
+          "Isolated Parameters"
+        ]
+      },
+      "key_libraries": [
+        "Swift Standard Library",
+        "Foundation",
+        "Combine",
+        "SwiftUI",
+        "UIKit",
+        "XCTest"
+      ],
+      "common_use_cases": [
+        "iOS Application Development",
+        "macOS Desktop Applications",
+        "watchOS Applications",
+        "tvOS Applications",
+        "Server-Side Swift",
+        "Command-Line Tools",
+        "Cross-Platform Desktop Apps"
+      ],
+      "best_practices": [
+        "Use structs for most value types",
+        "Protocol-oriented design preferred",
+        "Use guard for early exit",
+        "Prefer immutability with let",
+        "Implement Equatable & Hashable when needed",
+        "Use error handling with Result type",
+        "Understand ARC and avoid retain cycles",
+        "async/await for modern concurrency",
+        "Extensions to organize code logically",
+        "Custom operators sparingly"
+      ]
+    }
+  },
+  "cross_platform_comparison": {
+    "code_reuse": {
+      "react_native": 0.75,
+      "flutter": 0.95,
+      "native": 0.2
+    },
+    "performance": {
+      "react_native": "Good",
+      "flutter": "Excellent",
+      "native": "Best"
+    },
+    "development_speed": {
+      "react_native": "Fast",
+      "flutter": "Very Fast",
+      "native": "Slow"
+    },
+    "learning_curve": {
+      "react_native": "Moderate",
+      "flutter": "Moderate",
+      "native": "Steep"
+    },
+    "native_access": {
+      "react_native": "Requires native modules",
+      "flutter": "Good plugin support",
+      "native": "Direct access"
+    }
+  },
+  "skill_assessment_levels": {
+    "beginner": {
+      "description": "Can create basic applications with fundamental understanding",
+      "estimated_hours": 100,
+      "competencies": [
+        "UI component basics",
+        "Simple state management",
+        "Basic API integration",
+        "Local storage",
+        "Simple navigation"
+      ]
+    },
+    "intermediate": {
+      "description": "Can build real-world applications with professional patterns",
+      "estimated_hours": 300,
+      "competencies": [
+        "Complex UI patterns",
+        "Advanced state management",
+        "Error handling",
+        "Database operations",
+        "Testing implementation",
+        "Performance optimization"
+      ]
+    },
+    "advanced": {
+      "description": "Can architect and optimize large-scale applications",
+      "estimated_hours": 500,
+      "competencies": [
+        "Clean architecture implementation",
+        "Advanced performance optimization",
+        "Security best practices",
+        "Custom native modules",
+        "Deployment automation",
+        "Team mentorship"
+      ]
+    }
+  },
+  "agent_capabilities": {
+    "code_generation": {
+      "enabled": true,
+      "supported_tasks": [
+        "Generate boilerplate code",
+        "Create UI components",
+        "Implement API integration",
+        "Build navigation structures",
+        "Generate test cases"
+      ]
+    },
+    "problem_solving": {
+      "enabled": true,
+      "supported_areas": [
+        "Architecture design",
+        "Performance debugging",
+        "State management patterns",
+        "Networking issues",
+        "UI/UX problems",
+        "Security vulnerabilities"
+      ]
+    },
+    "learning_support": {
+      "enabled": true,
+      "supported_topics": [
+        "Language fundamentals",
+        "Platform-specific APIs",
+        "Design patterns",
+        "Best practices",
+        "Performance optimization",
+        "Security implementation"
+      ]
+    },
+    "project_guidance": {
+      "enabled": true,
+      "supported_guidance": [
+        "Architecture recommendations",
+        "Technology selection",
+        "Project planning",
+        "Code review suggestions",
+        "Deployment strategies",
+        "Team onboarding"
+      ]
+    }
+  },
+  "recommended_project_templates": {
+    "template_1": {
+      "name": "Todo Application",
+      "complexity": "Beginner",
+      "estimated_time_hours": 20,
+      "learning_outcomes": [
+        "UI basics",
+        "Local data persistence",
+        "CRUD operations",
+        "State management",
+        "Navigation"
+      ],
+      "key_features": [
+        "Create/Read/Update/Delete todos",
+        "Mark completion status",
+        "Search and filter",
+        "Categories/Tags",
+        "Local persistence"
+      ]
+    },
+    "template_2": {
+      "name": "Weather Application",
+      "complexity": "Intermediate",
+      "estimated_time_hours": 30,
+      "learning_outcomes": [
+        "API integration",
+        "JSON parsing",
+        "Location services",
+        "Error handling",
+        "Data caching",
+        "UI with real data"
+      ],
+      "key_features": [
+        "Current weather display",
+        "5-day forecast",
+        "Location search",
+        "Temperature unit toggle",
+        "Weather alerts"
+      ]
+    },
+    "template_3": {
+      "name": "Social Media Feed",
+      "complexity": "Advanced",
+      "estimated_time_hours": 60,
+      "learning_outcomes": [
+        "Complex state management",
+        "Image optimization",
+        "Pagination",
+        "Real-time updates",
+        "User authentication",
+        "Database design"
+      ],
+      "key_features": [
+        "User authentication",
+        "Post creation/editing",
+        "Comments and likes",
+        "User profiles",
+        "Real-time updates",
+        "Image caching"
+      ]
+    },
+    "template_4": {
+      "name": "E-Commerce Application",
+      "complexity": "Advanced",
+      "estimated_time_hours": 80,
+      "learning_outcomes": [
+        "Complex data models",
+        "Payment integration",
+        "Cart management",
+        "Order tracking",
+        "User account management",
+        "Search and filtering"
+      ],
+      "key_features": [
+        "Product browsing",
+        "Shopping cart",
+        "Checkout process",
+        "Payment integration",
+        "Order history",
+        "User reviews"
+      ]
+    }
+  }
+}
