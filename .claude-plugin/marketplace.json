@@ -1,0 +1,15 @@
+{
+  "name": "pluginagentmarketplace-ai-agents",
+  "owner": {
+    "name": "Plugin Agent Marketplace",
+    "email": "pluginagentmarketplace@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "custom-plugin-ai-agents",
+      "source": "./",
+      "description": "Claude Code plugin for ai agents development",
+      "version": "1.0.0"
+    }
+  ]
+}
