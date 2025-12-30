@@ -1,225 +1,224 @@
 ---
 name: learn
-description: Start Your Developer Roadmap Journey
+description: Start Your AI Agent Development Journey
 allowed-tools: Read
 ---
 
-# Start Your Developer Roadmap Journey
+# Start Your AI Agent Development Journey
 
-Welcome to the **Developer Roadmap Plugin**! This interactive guide helps you navigate 65+ technology roadmaps from roadmap.sh.
+Welcome to the **AI Agents Plugin**! This interactive guide helps you master AI agent development with production-grade patterns from LangChain, Anthropic, and OpenAI.
 
 ## Choose Your Learning Path
 
-Select a specialization area to begin:
+### 1. Agent Fundamentals
+Master the core concepts of AI agent systems.
 
-### 1. Frontend Development
-Master modern web development with React, Vue, Angular, TypeScript, and UI/UX design.
-
-**Roadmaps included:**
-- Frontend Developer (Beginner & Advanced)
-- React, Vue, Angular
-- TypeScript, JavaScript, HTML, CSS
-- Next.js, UX Design
+**Topics covered:**
+- ReAct (Reasoning + Acting) pattern
+- Plan-and-Execute architecture
+- Cognitive loops and decision making
+- Single vs multi-agent systems
 
 **Skills you'll learn:**
-- Component-driven development
-- State management (Redux, Pinia)
-- Performance optimization
-- Responsive design and accessibility
-- Modern build tools (Vite, Webpack)
+- Design agent architectures
+- Implement ReAct agents
+- Add circuit breakers and error handling
+- Build autonomous task solvers
 
-**Use the Frontend Agent** for guidance on:
+**Get started:**
 ```
-"Help me build a React dashboard with TypeScript and Tailwind"
-"Optimize my Next.js app for Core Web Vitals"
-"Create a responsive navigation with CSS Grid"
+"Help me understand how ReAct agents work"
+"Build a simple agent with LangGraph"
+"What's the difference between ReAct and Plan-and-Execute?"
 ```
 
 ---
 
-### 2. Backend Development
-Build scalable APIs and server-side applications with Node.js, Spring Boot, Laravel, and more.
+### 2. LLM Integration
+Connect and optimize Large Language Models for your agents.
 
-**Roadmaps included:**
-- Backend Developer (Beginner & Advanced)
-- API Design, Node.js, Spring Boot
-- ASP.NET Core, Laravel, PHP
-- GraphQL
+**Topics covered:**
+- Anthropic Claude API (Messages, Tool Use)
+- OpenAI API (Chat Completions, Functions)
+- Prompt engineering and templates
+- Cost optimization strategies
 
 **Skills you'll learn:**
-- RESTful and GraphQL API design
-- Database design and optimization
-- Authentication and security
-- Microservices architecture
-- Testing and deployment
+- Integrate multiple LLM providers
+- Design effective system prompts
+- Implement streaming responses
+- Reduce API costs by 40-60%
 
-**Use the Backend Agent** for:
+**Get started:**
 ```
-"Create a Node.js REST API with JWT authentication"
-"Design a microservices architecture for e-commerce"
-"Optimize PostgreSQL queries for performance"
+"Show me how to use Claude with tool calling"
+"Design a chain-of-thought prompt template"
+"How do I implement retry with exponential backoff?"
 ```
 
 ---
 
-### 3. Mobile Development
-Create native and cross-platform mobile apps for Android and iOS.
+### 3. RAG Systems
+Build Retrieval-Augmented Generation for grounded responses.
 
-**Roadmaps included:**
-- Android, iOS
-- React Native, Flutter
-- Kotlin, Swift
+**Topics covered:**
+- Embedding models and vector stores
+- Chunking strategies (semantic, recursive)
+- Hybrid search (dense + sparse)
+- Reranking and evaluation
 
 **Skills you'll learn:**
-- Native Android (Kotlin, Jetpack Compose)
-- Native iOS (Swift, SwiftUI)
-- Cross-platform development
-- Mobile UI/UX patterns
-- App store deployment
+- Design RAG pipelines
+- Choose optimal chunking strategies
+- Implement hybrid search
+- Evaluate with RAGAS metrics
 
-**Use the Mobile Agent** for:
+**Get started:**
 ```
-"Build an Android app with Jetpack Compose and MVVM"
-"Create an iOS weather app with SwiftUI"
-"Develop a cross-platform app with Flutter"
+"Build a RAG system with Pinecone"
+"What's the best chunk size for technical docs?"
+"How do I implement reranking?"
 ```
 
 ---
 
-### 4. DevOps & Infrastructure
-Automate deployment, manage infrastructure, and ensure reliability.
+### 4. Tool Calling
+Enable LLMs to interact with external systems.
 
-**Roadmaps included:**
-- DevOps (Beginner & Advanced)
-- Docker, Kubernetes
-- AWS, Linux, Terraform, Cloudflare
+**Topics covered:**
+- Claude Tool Use
+- OpenAI Function Calling (with strict mode)
+- JSON Schema design
+- Error handling and validation
 
 **Skills you'll learn:**
-- Container orchestration
-- CI/CD pipelines
-- Infrastructure as Code
-- Cloud architecture (AWS)
-- Monitoring and observability
+- Design tool schemas
+- Implement tool loops
+- Handle execution errors
+- Orchestrate sequential/parallel tools
 
-**Use the DevOps Agent** for:
+**Get started:**
 ```
-"Create a Kubernetes deployment with autoscaling"
-"Write Terraform code for AWS infrastructure"
-"Set up a CI/CD pipeline with GitHub Actions"
+"Create a tool for database search"
+"How does OpenAI strict mode work?"
+"Best practices for tool descriptions"
 ```
 
 ---
 
-### 5. AI & Data Science
-Build intelligent applications with machine learning, AI agents, and data engineering.
+### 5. Multi-Agent Systems
+Build coordinated systems of specialized agents.
 
-**Roadmaps included:**
-- AI Engineer, AI Agents
-- Data Scientist, Data Analyst, Data Engineer
-- Machine Learning, MLOps
-- BI Analyst, Prompt Engineering
+**Topics covered:**
+- Orchestrator-Worker pattern
+- Hierarchical architectures
+- Agent communication
+- LangGraph multi-agent
 
 **Skills you'll learn:**
-- Machine learning model development
-- AI agent systems (LangChain, RAG)
-- Data engineering pipelines
-- MLOps and model deployment
-- Prompt engineering
+- Design multi-agent architectures
+- Implement orchestration patterns
+- Coordinate parallel execution
+- Handle multi-agent failures
 
-**Use the AI/Data Agent** for:
+**Get started:**
 ```
-"Build a customer churn prediction model"
-"Create an AI agent with RAG and LangChain"
-"Design an ETL pipeline with Airflow"
+"Build an orchestrator-worker system"
+"How does agent communication work?"
+"Design a hierarchical agent system"
 ```
 
 ---
 
-### 6. Programming Languages
-Master programming languages and computer science fundamentals.
+### 6. Agent Memory
+Give agents the ability to remember and learn.
 
-**Roadmaps included:**
-- Python, Java, Go, Rust, C++
-- JavaScript/TypeScript
-- Computer Science, Data Structures & Algorithms
-- Bash/Shell, SQL
+**Topics covered:**
+- Short-term (conversation buffer)
+- Long-term (vector store)
+- Semantic and episodic memory
+- Context window management
 
 **Skills you'll learn:**
-- Language-specific best practices
-- Data structures and algorithms
-- Concurrency and performance
-- Type systems and generics
-- Database query optimization
+- Implement multi-layer memory
+- Design retrieval strategies
+- Optimize context usage
+- Build personalized agents
 
-**Use the Programming Agent** for:
+**Get started:**
 ```
-"Implement a graph algorithm in Python"
-"Optimize this C++ code for performance"
-"Create a type-safe builder pattern in TypeScript"
+"Add conversation memory to my agent"
+"How do I implement semantic memory?"
+"Best practices for context management"
 ```
 
 ---
 
-### 7. Architecture & Management
-Design scalable systems and lead engineering teams.
+### 7. Agent Safety
+Ensure responsible AI agent deployment.
 
-**Roadmaps included:**
-- Software Architect, System Design
-- Cyber Security, Blockchain
-- PostgreSQL DBA, MongoDB, Redis
-- Product Manager, Engineering Manager
-- QA, Technical Writer, DevRel
-- Game Developer
+**Topics covered:**
+- Input/output guardrails
+- Prompt injection defense
+- Content filtering
+- Rate limiting and compliance
 
 **Skills you'll learn:**
-- Software architecture patterns
-- System design for scale
-- Security and compliance
-- Database administration
-- Product and people management
-- Quality assurance strategies
+- Implement safety guardrails
+- Detect and prevent attacks
+- Add monitoring and logging
+- Meet compliance requirements
 
-**Use the Architecture Agent** for:
+**Get started:**
 ```
-"Design a URL shortener that handles 100M requests/day"
-"Review this authentication flow for security"
-"Create a 6-month product roadmap"
+"Add guardrails to my agent"
+"How do I prevent prompt injection?"
+"Implement rate limiting for agents"
 ```
 
 ---
 
 ## Quick Commands
 
-- **/learn** - This guide (start here)
-- **/roadmap [technology]** - View specific roadmap details
-- **/assess** - Test your knowledge
-- **/resources [topic]** - Get curated learning resources
-- **/project [level]** - Find project ideas by skill level
+| Command | Description |
+|---------|-------------|
+| `/learn` | This guide |
+| `/roadmap [topic]` | View topic details |
+| `/assess [topic]` | Test your knowledge |
+| `/resources [topic]` | Get learning resources |
+| `/project [topic] [level]` | Find project ideas |
 
-## How This Plugin Works
+## Learning Path by Experience
 
-1. **Choose a path** from the 7 specializations above
-2. **Invoke the agent** relevant to your task
-3. **Use skills** for specific technologies (automatically activated)
-4. **Get guidance** on roadmaps, best practices, and code generation
-5. **Track progress** with assessments and projects
+### Beginner (0-2 months)
+1. Start with Agent Fundamentals
+2. Learn LLM Integration basics
+3. Build first ReAct agent
+4. Practice with Tool Calling
 
-## All 65+ Roadmaps Available
+### Intermediate (2-6 months)
+1. Master RAG Systems
+2. Implement Multi-Agent patterns
+3. Add Agent Memory
+4. Build production agents
 
-**Frontend:** Frontend, React, Vue, Angular, Next.js, TypeScript, JavaScript, HTML, CSS, UX Design
-
-**Backend:** Backend, API Design, Node.js, Spring Boot, ASP.NET Core, Laravel, PHP, GraphQL
-
-**Mobile:** Android, iOS, React Native, Flutter, Kotlin, Swift
-
-**DevOps:** DevOps, Docker, Kubernetes, AWS, Linux, Terraform, Cloudflare
-
-**Data & AI:** AI Engineer, AI Agents, Data Scientist, Data Analyst, Data Engineer, Machine Learning, MLOps, BI Analyst, Prompt Engineering
-
-**Languages:** Python, Java, Go, Rust, C++, Computer Science, Data Structures, Bash, SQL
-
-**Architecture:** Software Architect, System Design, Cyber Security, Blockchain, PostgreSQL DBA, MongoDB, Redis, Product Manager, Engineering Manager, QA, Technical Writer, DevRel, Game Developer
+### Advanced (6+ months)
+1. Complex orchestration patterns
+2. Agent Safety and compliance
+3. Performance optimization
+4. Production deployment
 
 ---
 
-**Ready to start?** Tell me which path interests you and I'll guide you through the roadmap! 🚀
+## Framework Quick Reference
+
+| Framework | Best For | Key Feature |
+|-----------|----------|-------------|
+| LangChain | General agents | Tool ecosystem |
+| LangGraph | Complex workflows | State machines |
+| Anthropic SDK | Claude agents | Native tool use |
+| OpenAI SDK | GPT agents | Strict mode |
+
+---
+
+**Ready to start?** Tell me which path interests you! 🚀

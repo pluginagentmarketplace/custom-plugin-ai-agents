@@ -1,19 +1,19 @@
 <div align="center">
 
 <!-- Animated Typing Banner -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=Ai+Agents+Assistant;7+Agents+%7C+27+Skills;Claude+Code+Plugin" alt="Ai Agents Assistant" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=2E9EF7&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=AI+Agents+Assistant;Production-Grade+Agent+Development;Claude+Code+Plugin" alt="AI Agents Assistant" />
 
 <br/>
 
 <!-- Badge Row 1: Status Badges -->
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)](https://github.com/pluginagentmarketplace/custom-plugin-ai-agents/releases)
+[![Version](https://img.shields.io/badge/Version-2.0.0-blue?style=for-the-badge)](https://github.com/pluginagentmarketplace/custom-plugin-ai-agents/releases)
 [![License](https://img.shields.io/badge/License-Custom-yellow?style=for-the-badge)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Production-brightgreen?style=for-the-badge)](#)
 [![SASMP](https://img.shields.io/badge/SASMP-v1.3.0-blueviolet?style=for-the-badge)](#)
 
 <!-- Badge Row 2: Content Badges -->
 [![Agents](https://img.shields.io/badge/Agents-7-orange?style=flat-square&logo=robot)](#-agents)
-[![Skills](https://img.shields.io/badge/Skills-27-purple?style=flat-square&logo=lightning)](#-skills)
+[![Skills](https://img.shields.io/badge/Skills-7-purple?style=flat-square&logo=lightning)](#-skills)
 [![Commands](https://img.shields.io/badge/Commands-5-green?style=flat-square&logo=terminal)](#-commands)
 
 <br/>
@@ -25,7 +25,7 @@
 
 ### What is this?
 
-> **Ai Agents Assistant** is a Claude Code plugin with **7 agents** and **27 skills** for ai agents development.
+> **AI Agents Assistant** is a Claude Code plugin with **7 production-grade agents** for building AI agent systems using LangChain, LangGraph, Anthropic, and OpenAI patterns.
 
 </div>
 
@@ -41,6 +41,7 @@
 - [Agents](#-agents)
 - [Skills](#-skills)
 - [Commands](#-commands)
+- [Best Practices](#-best-practices)
 - [Documentation](#-documentation)
 - [Contributing](#-contributing)
 - [License](#-license)
@@ -95,12 +96,13 @@ cd custom-plugin-ai-agents
 After restart, you should see these agents:
 
 ```
-custom-plugin-ai-agents:04-devops-infrastructure
-custom-plugin-ai-agents:07-architecture-management
-custom-plugin-ai-agents:01-frontend-development
-custom-plugin-ai-agents:05-ai-data-science
-custom-plugin-ai-agents:06-programming-languages
-... and 2 more
+custom-plugin-ai-agents:01-ai-agent-fundamentals
+custom-plugin-ai-agents:02-llm-integration
+custom-plugin-ai-agents:03-rag-systems
+custom-plugin-ai-agents:04-tool-calling
+custom-plugin-ai-agents:05-multi-agent
+custom-plugin-ai-agents:06-agent-memory
+custom-plugin-ai-agents:07-agent-safety
 ```
 
 ---
@@ -109,58 +111,117 @@ custom-plugin-ai-agents:06-programming-languages
 
 | Feature | Description |
 |---------|-------------|
-| 🤖 **7 Agents** | Specialized AI agents for ai agents tasks |
-| 🛠️ **27 Skills** | Reusable capabilities with Golden Format |
-| ⌨️ **5 Commands** | Quick slash commands |
+| 🤖 **7 Agents** | Production-grade AI agent specialists |
+| 🛠️ **7 Skills** | Atomic capabilities with code examples |
+| ⌨️ **5 Commands** | Quick slash commands for learning |
 | 🔄 **SASMP v1.3.0** | Full protocol compliance |
+| 📚 **2024-2025 Patterns** | LangGraph, Claude Tool Use, OpenAI Functions |
 
 ---
 
 ## 🤖 Agents
 
-### 7 Specialized Agents
+### 7 Production-Grade Agents
 
-| # | Agent | Purpose |
-|---|-------|---------|
-| 1 | **04-devops-infrastructure** | DevOps and infrastructure expert specializing in Docker, Kub |
-| 2 | **07-architecture-management** | Software architecture, system design, security, and engineer |
-| 3 | **01-frontend-development** | Expert in frontend development, UI frameworks, and modern we |
-| 4 | **05-ai-data-science** | AI and Data Science expert specializing in machine learning, |
-| 5 | **06-programming-languages** | Programming languages expert covering Python, Java, Go, Rust |
-| 6 | **02-backend-development** | Backend development expert specializing in API design, datab |
-| 7 | **03-mobile-development** | Mobile development expert for Android, iOS, React Native, an |
+| # | Agent | Expertise |
+|---|-------|-----------|
+| 1 | **AI Agent Fundamentals** | ReAct patterns, cognitive loops, architectures |
+| 2 | **LLM Integration** | API orchestration, prompting, cost optimization |
+| 3 | **RAG Systems** | Embeddings, chunking, hybrid search, reranking |
+| 4 | **Tool Calling** | Function calling, schemas, validation |
+| 5 | **Multi-Agent** | Orchestrator-worker, hierarchical systems |
+| 6 | **Agent Memory** | Short/long-term, semantic retrieval |
+| 7 | **Agent Safety** | Guardrails, filtering, compliance |
+
+### Agent Capabilities
+
+Each agent includes:
+- ✅ Clear role & responsibility boundaries
+- ✅ Input/Output schemas (TypeScript)
+- ✅ Error handling patterns
+- ✅ Fallback strategies
+- ✅ Token/cost optimization configs
+- ✅ Troubleshooting decision trees
+- ✅ Production code examples
 
 ---
 
 ## 🛠️ Skills
 
-### Available Skills
+### 7 Atomic Skills
 
-| Skill | Description | Invoke |
-|-------|-------------|--------|
-| `react-native-development` | Use when building cross-platform mobile apps with React Nati | `Skill("custom-plugin-ai-agents:react-native-development")` |
-| `graphql-api-design` | Design efficient GraphQL APIs with schemas, resolvers, and D | `Skill("custom-plugin-ai-agents:graphql-api-design")` |
-| `docker-containerization` | Master containerization with Docker multi-stage builds, Comp | `Skill("custom-plugin-ai-agents:docker-containerization")` |
-| `database-optimization` | Optimize database performance through indexing, query optimi | `Skill("custom-plugin-ai-agents:database-optimization")` |
-| `vue-development` | Vue 3 development using Composition API, reactivity, Vue Rou | `Skill("custom-plugin-ai-agents:vue-development")` |
-| `python-development` | Master modern Python development with type hints, async/awai | `Skill("custom-plugin-ai-agents:python-development")` |
-| `kubernetes-orchestration` | Orchestrate containerized applications with Deployments, Ser | `Skill("custom-plugin-ai-agents:kubernetes-orchestration")` |
-| `ml-model-development` | Build machine learning models with scikit-learn, feature eng | `Skill("custom-plugin-ai-agents:ml-model-development")` |
-| `ios-swift-development` | Use when building iOS applications with SwiftUI, Combine, as | `Skill("custom-plugin-ai-agents:ios-swift-development")` |
-| `css-modern` | Modern CSS layouts with Flexbox, Grid, animations, responsiv | `Skill("custom-plugin-ai-agents:css-modern")` |
-| ... | +17 more | See skills/ directory |
+| Skill | Bonded Agent | Purpose |
+|-------|--------------|---------|
+| `ai-agent-basics` | 01-ai-agent-fundamentals | Build ReAct agents with LangGraph |
+| `llm-integration` | 02-llm-integration | Integrate Claude, OpenAI, local models |
+| `rag-systems` | 03-rag-systems | Build production RAG pipelines |
+| `tool-calling` | 04-tool-calling | Implement function calling |
+| `multi-agent` | 05-multi-agent | Build orchestrator-worker systems |
+| `agent-memory` | 06-agent-memory | Add memory to agents |
+| `agent-safety` | 07-agent-safety | Implement safety guardrails |
+
+### Invoke Skills
+
+```python
+# Example: Invoke the RAG skill
+Skill("custom-plugin-ai-agents:rag-systems")
+```
 
 ---
 
 ## ⌨️ Commands
 
-| Command | Description |
-|---------|-------------|
-| `/resources` | Learning Resources |
-| `/learn` | Start Your Developer Roadmap Journey |
-| `/assess` | Knowledge Assessment |
-| `/project` | Project Ideas by Skill Level |
-| `/roadmap` | View Technology Roadmap |
+| Command | Description | Usage |
+|---------|-------------|-------|
+| `/learn` | Start your AI agent journey | `/learn` |
+| `/roadmap` | View learning roadmap | `/roadmap ai-agents` |
+| `/assess` | Test your knowledge | `/assess tool-calling intermediate` |
+| `/resources` | Get learning resources | `/resources rag-systems tutorials` |
+| `/project` | Find project ideas | `/project multi-agent advanced` |
+
+---
+
+## 📋 Best Practices (2024-2025)
+
+### From LangChain/LangGraph
+- Use LangGraph for new agent implementations
+- Implement human-in-the-loop checkpoints
+- Add observability with LangSmith
+
+### From Anthropic
+- One job per subagent
+- Orchestrator handles global planning
+- Keep tool permissions narrow
+
+### From OpenAI
+- Enable strict mode for function calling
+- Use structured outputs
+- Implement circuit breakers
+
+---
+
+## 📁 Project Structure
+
+```
+custom-plugin-ai-agents/
+├── 📁 .claude-plugin/
+│   ├── plugin.json
+│   └── marketplace.json
+├── 📁 agents/              # 7 production agents
+│   ├── 01-ai-agent-fundamentals.md
+│   ├── 02-llm-integration.md
+│   ├── 03-rag-systems.md
+│   ├── 04-tool-calling.md
+│   ├── 05-multi-agent.md
+│   ├── 06-agent-memory.md
+│   └── 07-agent-safety.md
+├── 📁 skills/              # 7 atomic skills
+├── 📁 commands/            # 5 slash commands
+├── 📁 hooks/
+├── 📄 README.md
+├── 📄 CHANGELOG.md
+└── 📄 LICENSE
+```
 
 ---
 
@@ -172,28 +233,14 @@ custom-plugin-ai-agents:06-programming-languages
 | [CONTRIBUTING.md](CONTRIBUTING.md) | How to contribute |
 | [LICENSE](LICENSE) | License information |
 
----
+### External Resources
 
-## 📁 Project Structure
-
-<details>
-<summary>Click to expand</summary>
-
-```
-custom-plugin-ai-agents/
-├── 📁 .claude-plugin/
-│   ├── plugin.json
-│   └── marketplace.json
-├── 📁 agents/              # 7 agents
-├── 📁 skills/              # 27 skills (Golden Format)
-├── 📁 commands/            # 5 commands
-├── 📁 hooks/
-├── 📄 README.md
-├── 📄 CHANGELOG.md
-└── 📄 LICENSE
-```
-
-</details>
+| Resource | Link |
+|----------|------|
+| LangGraph Docs | https://langchain-ai.github.io/langgraph/ |
+| Anthropic Docs | https://docs.anthropic.com/ |
+| OpenAI Docs | https://platform.openai.com/docs |
+| OWASP LLM Top 10 | https://owasp.org/www-project-top-10-for-large-language-model-applications/ |
 
 ---
 
@@ -201,12 +248,12 @@ custom-plugin-ai-agents/
 
 | Field | Value |
 |-------|-------|
-| **Version** | 1.0.0 |
-| **Last Updated** | 2025-12-29 |
+| **Version** | 2.0.0 |
+| **Last Updated** | 2025-01-01 |
 | **Status** | Production Ready |
 | **SASMP** | v1.3.0 |
 | **Agents** | 7 |
-| **Skills** | 27 |
+| **Skills** | 7 |
 | **Commands** | 5 |
 
 ---
@@ -217,18 +264,18 @@ Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md)
 
 1. Fork the repository
 2. Create your feature branch
-3. Follow the Golden Format for new skills
+3. Follow the production patterns in existing agents
 4. Submit a pull request
 
 ---
 
 ## ⚠️ Security
 
-> **Important:** This repository contains third-party code and dependencies.
+> **Important:** This repository contains patterns for AI agent development.
 >
-> - ✅ Always review code before using in production
-> - ✅ Check dependencies for known vulnerabilities
-> - ✅ Follow security best practices
+> - ✅ Always implement safety guardrails
+> - ✅ Follow OWASP LLM Top 10 guidelines
+> - ✅ Test for prompt injection vulnerabilities
 > - ✅ Report security issues privately via [Issues](../../issues)
 
 ---
