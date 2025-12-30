@@ -1,464 +1,387 @@
 ---
 name: project
-description: Project Ideas by Skill Level
+description: AI Agent Project Ideas by Skill Level
 allowed-tools: Read
 ---
 
-# Project Ideas by Skill Level
+# AI Agent Project Ideas
 
-Find hands-on projects to build and strengthen your skills in any technology.
+Find hands-on projects to build and strengthen your AI agent development skills.
 
 ## Usage
 
 ```
-/project [technology] [level]
+/project [topic] [level]
 ```
 
 **Parameters:**
-- `technology`: Any roadmap (react, python, kubernetes, etc.)
+- `topic`: AI agent topic (agent-fundamentals, rag-systems, etc.)
 - `level`: `beginner`, `intermediate`, `advanced`, or `expert`
 
 ## Examples
 
 ```
-/project react beginner
-/project python intermediate
-/project kubernetes advanced
-/project system-design expert
+/project ai-agents beginner
+/project rag-systems intermediate
+/project multi-agent advanced
 ```
 
 ---
 
-## Project Ideas
+## Beginner Projects (0-2 months)
 
-### Frontend Development
-
-#### Beginner (0-4 months)
+### 1. Simple ReAct Agent
 ```
-/project react beginner
-```
+Technologies: Python, LangGraph, Claude/OpenAI
 
-**1. Todo List with Local Storage**
-- Technologies: React, TypeScript, CSS
-- Features:
-  - Add, edit, delete, complete todos
-  - Filter by status (all, active, completed)
-  - Persist data in localStorage
-  - Responsive design
-- Skills learned: useState, useEffect, event handling, localStorage API
-- Time: 8-12 hours
-- GitHub template: Search "react-todo-typescript"
+Features:
+- 3 basic tools (calculator, weather, search)
+- Thought → Action → Observation loop
+- Max iterations limit
+- Basic error handling
 
-**2. Weather Dashboard**
-- Technologies: React, TypeScript, Weather API
-- Features:
-  - Search city weather
-  - Display current conditions
-  - 5-day forecast
-  - Geolocation support
-- Skills learned: API fetching, useEffect, error handling, conditional rendering
-- Time: 12-16 hours
-- API: OpenWeatherMap API (free tier)
+Skills learned:
+- ReAct pattern
+- Tool calling basics
+- LLM API usage
 
-**3. Portfolio Website**
-- Technologies: React, Next.js, Tailwind CSS
-- Features:
-  - About, projects, contact sections
-  - Responsive navigation
-  - Dark/light mode toggle
-  - Contact form
-- Skills learned: Routing, Tailwind, theming, forms
-- Time: 16-20 hours
-
-#### Intermediate (4-8 months)
-```
-/project react intermediate
+Time: 8-12 hours
 ```
 
-**1. E-commerce Product Catalog**
-- Technologies: React, TypeScript, Redux Toolkit, React Router
-- Features:
-  - Product listing with filtering
-  - Shopping cart functionality
-  - Product search and sort
-  - Checkout flow (UI only)
-- Skills learned: Redux, routing, complex state, performance optimization
-- Time: 30-40 hours
-- API: FakeStore API or create mock data
+**Implementation:**
+```python
+from langgraph.prebuilt import create_react_agent
+from langchain_anthropic import ChatAnthropic
 
-**2. Real-time Chat Application**
-- Technologies: React, Socket.io, Node.js, Express
-- Features:
-  - User authentication (JWT)
-  - Real-time messaging
-  - Typing indicators
-  - Online user list
-- Skills learned: WebSocket, authentication, real-time updates
-- Time: 40-50 hours
-
-**3. Task Management Dashboard**
-- Technologies: React, TypeScript, Drag-and-Drop library, Firebase
-- Features:
-  - Kanban board (like Trello)
-  - Drag-and-drop tasks
-  - User authentication
-  - Cloud persistence
-- Skills learned: DnD, Firebase, authentication, complex interactions
-- Time: 50-60 hours
-
-#### Advanced (8-12 months)
-```
-/project react advanced
+llm = ChatAnthropic(model="claude-sonnet-4-20250514")
+tools = [calculator, weather_api, web_search]
+agent = create_react_agent(llm, tools)
 ```
 
-**1. Full-Stack Blog Platform**
-- Technologies: Next.js 14, PostgreSQL, Prisma, NextAuth.js
-- Features:
-  - Server Components and Server Actions
-  - Markdown editor with preview
-  - Comments and reactions
-  - User profiles and authentication
-  - SEO optimization
-- Skills learned: SSR, Server Actions, database design, SEO
-- Time: 60-80 hours
+### 2. Q&A Over Documents (Basic RAG)
+```
+Technologies: Python, LangChain, Chroma, OpenAI
 
-**2. Analytics Dashboard**
-- Technologies: React, TypeScript, D3.js, WebSocket, Node.js
-- Features:
-  - Real-time data visualization
-  - Multiple chart types
-  - Data filtering and aggregation
-  - Export to CSV/PDF
-- Skills learned: Data visualization, performance with large datasets, real-time updates
-- Time: 80-100 hours
+Features:
+- Load and chunk PDF documents
+- Create embeddings and store in Chroma
+- Simple retrieval and generation
+- Display source documents
 
-**3. Video Streaming Platform (UI)**
-- Technologies: React, Video.js, HLS.js, AWS S3
-- Features:
-  - Video player with controls
-  - Playlist management
-  - Comments and likes
-  - Recommendations
-- Skills learned: Video streaming, media optimization, complex UI
-- Time: 100+ hours
+Skills learned:
+- RAG pipeline basics
+- Chunking strategies
+- Vector store usage
+
+Time: 12-16 hours
+```
+
+### 3. Todo Agent with Local Storage
+```
+Technologies: Python, Claude, JSON file storage
+
+Features:
+- Add, complete, delete todos
+- Persist to JSON file
+- Natural language interface
+- List and filter todos
+
+Skills learned:
+- Tool schema design
+- CRUD operations
+- State persistence
+
+Time: 6-10 hours
+```
 
 ---
 
-### Backend Development
+## Intermediate Projects (2-4 months)
 
-#### Beginner
+### 1. Research Assistant with Memory
 ```
-/project nodejs beginner
-```
+Technologies: Python, LangGraph, Pinecone, Claude
 
-**1. RESTful Todo API**
-- Technologies: Node.js, Express, JSON file storage
-- Features:
-  - CRUD operations for todos
-  - Input validation
-  - Error handling
-  - API documentation
-- Skills learned: Express, routing, middleware, file system
-- Time: 8-12 hours
+Features:
+- Web search and summarization
+- Conversation memory (short + long term)
+- Citation tracking
+- Multi-turn research sessions
 
-**2. User Authentication API**
-- Technologies: Node.js, Express, PostgreSQL, bcrypt, JWT
-- Features:
-  - User registration and login
-  - Password hashing
-  - JWT token generation
-  - Protected routes
-- Skills learned: Authentication, security, database, JWT
-- Time: 16-20 hours
+Skills learned:
+- Memory architecture
+- Search integration
+- Context management
 
-#### Intermediate
-```
-/project backend intermediate
+Time: 30-40 hours
 ```
 
-**1. Blog API with Comments**
-- Technologies: Node.js, Express, PostgreSQL, Prisma
-- Features:
-  - User authentication
-  - Post CRUD operations
-  - Comments system
-  - Like/unlike functionality
-  - Pagination
-- Skills learned: Complex database relations, ORM, authorization
-- Time: 30-40 hours
-
-**2. E-commerce Backend**
-- Technologies: Node.js, Express, MongoDB, Stripe
-- Features:
-  - Product management
-  - Shopping cart
-  - Order processing
-  - Payment integration
-  - Inventory management
-- Skills learned: Transactions, payment processing, complex business logic
-- Time: 60-80 hours
-
-#### Advanced
+**Architecture:**
 ```
-/project backend advanced
+User Query
+    ↓
+Memory Retrieval (relevant past research)
+    ↓
+Web Search (new information)
+    ↓
+Synthesis (combine and cite)
+    ↓
+Response + Memory Update
 ```
 
-**1. Microservices Architecture**
-- Technologies: Node.js, Docker, Kubernetes, RabbitMQ, PostgreSQL
-- Features:
-  - User service, product service, order service
-  - API gateway
-  - Message queue communication
-  - Service discovery
-- Skills learned: Microservices, messaging, orchestration
-- Time: 100+ hours
+### 2. Code Review Agent
+```
+Technologies: Python, LangGraph, Claude, Git
 
-**2. Real-time Collaboration Platform API**
-- Technologies: Node.js, Socket.io, Redis, PostgreSQL, WebRTC
-- Features:
-  - Real-time document editing
-  - Operational transformation
-  - Presence awareness
-  - Video/audio calls
-- Skills learned: Real-time systems, conflict resolution, WebRTC
-- Time: 150+ hours
+Features:
+- Analyze code diffs
+- Identify potential issues
+- Suggest improvements
+- Generate review comments
+
+Skills learned:
+- Complex tool chains
+- Code analysis
+- Structured output
+
+Time: 40-50 hours
+```
+
+### 3. Customer Support Agent
+```
+Technologies: Python, LangChain, RAG, Claude
+
+Features:
+- Knowledge base retrieval
+- Ticket classification
+- Response generation
+- Escalation detection
+
+Skills learned:
+- Production RAG
+- Classification
+- Guardrails
+
+Time: 40-50 hours
+```
+
+### 4. Data Analysis Agent
+```
+Technologies: Python, LangGraph, Pandas, Claude
+
+Features:
+- Load CSV/Excel files
+- Natural language queries
+- Generate visualizations
+- Export reports
+
+Skills learned:
+- Tool orchestration
+- Data processing
+- Visualization
+
+Time: 30-40 hours
+```
 
 ---
 
-### Mobile Development
+## Advanced Projects (4-8 months)
 
-#### Beginner
+### 1. Multi-Agent Research System
 ```
-/project android beginner
-```
+Technologies: Python, LangGraph, Claude (multi-model), Pinecone
 
-**1. Calculator App**
-- Technologies: Kotlin, Jetpack Compose
-- Features:
-  - Basic arithmetic operations
-  - History of calculations
-  - Material Design 3
-- Skills learned: Compose UI, state management, basic logic
-- Time: 10-15 hours
+Features:
+- Orchestrator agent (planning)
+- Researcher agent (web search)
+- Analyst agent (synthesis)
+- Writer agent (final output)
+- Shared memory and state
 
-**2. Weather App**
-- Technologies: Kotlin, Jetpack Compose, Retrofit, Weather API
-- Features:
-  - City search
-  - Current weather display
-  - 7-day forecast
-  - Save favorite cities
-- Skills learned: API integration, Room database, MVVM
-- Time: 20-25 hours
+Skills learned:
+- Orchestrator-Worker pattern
+- Agent coordination
+- Multi-model strategies
 
-#### Intermediate
-```
-/project flutter intermediate
+Time: 80-100 hours
 ```
 
-**1. Expense Tracker**
-- Technologies: Flutter, Dart, SQLite, Provider
-- Features:
-  - Add/edit/delete expenses
-  - Categories and tags
-  - Charts and analytics
-  - Export to CSV
-- Skills learned: Local database, state management, charts
-- Time: 30-40 hours
-
-**2. Social Media Clone**
-- Technologies: Flutter, Firebase, Riverpod
-- Features:
-  - User profiles
-  - Post creation with images
-  - Likes and comments
-  - Follow system
-- Skills learned: Firebase integration, image upload, complex state
-- Time: 60-80 hours
-
-#### Advanced
+**Architecture:**
 ```
-/project ios advanced
+Orchestrator (Claude Opus)
+    ├── Researcher (Claude Sonnet)
+    │   └── Web Search Tool
+    ├── Analyst (Claude Sonnet)
+    │   └── Data Analysis Tool
+    └── Writer (Claude Haiku)
+        └── Formatting Tool
 ```
 
-**1. Fitness Tracking App**
-- Technologies: Swift, SwiftUI, HealthKit, CoreML
-- Features:
-  - Workout tracking
-  - Health data integration
-  - ML-powered exercise detection
-  - Custom charts
-- Skills learned: HealthKit, CoreML, advanced SwiftUI
-- Time: 80-100 hours
+### 2. Autonomous Coding Agent
+```
+Technologies: Python, LangGraph, Claude, Git, Tests
+
+Features:
+- Understand codebase structure
+- Plan implementation steps
+- Write and modify code
+- Run and fix tests
+- Create commits
+
+Skills learned:
+- Complex tool orchestration
+- Code generation
+- Self-correction loops
+
+Time: 100-150 hours
+```
+
+### 3. RAG with Evaluation Pipeline
+```
+Technologies: Python, LangChain, RAGAS, Pinecone
+
+Features:
+- Production RAG pipeline
+- Hybrid search (dense + sparse)
+- Reranking
+- Automated evaluation
+- A/B testing framework
+
+Skills learned:
+- Production RAG
+- Evaluation metrics
+- Performance optimization
+
+Time: 60-80 hours
+```
+
+### 4. Agent with Safety Guardrails
+```
+Technologies: Python, Guardrails AI, Claude
+
+Features:
+- Input validation (injection detection)
+- Output filtering (PII, toxicity)
+- Rate limiting
+- Audit logging
+- Circuit breakers
+
+Skills learned:
+- Safety patterns
+- Production hardening
+- Compliance
+
+Time: 50-70 hours
+```
 
 ---
 
-### DevOps & Infrastructure
+## Expert Projects (8+ months)
 
-#### Beginner
+### 1. Enterprise Multi-Agent Platform
 ```
-/project docker beginner
-```
+Technologies: Full stack, Kubernetes, multiple LLMs
 
-**1. Containerize a Web Application**
-- Technologies: Docker, Node.js
-- Tasks:
-  - Create Dockerfile
-  - Multi-stage build
-  - Docker Compose with database
-  - Environment variables
-- Skills learned: Containerization basics
-- Time: 6-8 hours
+Features:
+- Agent marketplace
+- Custom agent builder
+- Multi-tenant isolation
+- Usage analytics
+- API gateway
 
-#### Intermediate
-```
-/project kubernetes intermediate
+Time: 200+ hours
 ```
 
-**1. Deploy Microservices to Kubernetes**
-- Technologies: Kubernetes, Docker, Helm
-- Tasks:
-  - Create deployments and services
-  - ConfigMaps and Secrets
-  - Ingress controller
-  - Horizontal Pod Autoscaling
-- Skills learned: K8s orchestration, Helm charts
-- Time: 30-40 hours
-
-#### Advanced
+### 2. Self-Improving Agent
 ```
-/project terraform advanced
+Technologies: Python, LangGraph, Claude, evaluation
+
+Features:
+- Performance self-evaluation
+- Automatic prompt refinement
+- Learning from feedback
+- Version management
+
+Time: 150+ hours
 ```
 
-**1. Multi-Environment AWS Infrastructure**
-- Technologies: Terraform, AWS, GitHub Actions
-- Tasks:
-  - VPC with public/private subnets
-  - ECS Fargate cluster
-  - RDS with backups
-  - CloudFront CDN
-  - CI/CD pipeline
-- Skills learned: IaC, cloud architecture, automation
-- Time: 60-80 hours
+### 3. Real-Time Collaborative Agents
+```
+Technologies: Python, WebSocket, Redis, multiple agents
+
+Features:
+- Real-time agent coordination
+- Conflict resolution
+- Shared working memory
+- Human-in-the-loop
+
+Time: 150+ hours
+```
 
 ---
 
-### AI & Data Science
+## Project Selection Guide
 
-#### Beginner
-```
-/project python beginner
-```
+### By Learning Goal
 
-**1. Data Analysis of CSV Dataset**
-- Technologies: Python, Pandas, Matplotlib
-- Tasks:
-  - Load and clean data
-  - Exploratory data analysis
-  - Create visualizations
-  - Statistical summary
-- Skills learned: Data manipulation, visualization
-- Time: 8-12 hours
-- Dataset: Kaggle beginner datasets
+| Goal | Recommended Project |
+|------|---------------------|
+| Learn basics | Simple ReAct Agent |
+| Understand RAG | Q&A Over Documents |
+| Master tools | Code Review Agent |
+| Multi-agent | Research System |
+| Production | Safety Guardrails |
 
-#### Intermediate
-```
-/project machine-learning intermediate
-```
+### By Time Available
 
-**1. Customer Churn Prediction**
-- Technologies: Python, Scikit-learn, Pandas
-- Tasks:
-  - Feature engineering
-  - Train multiple models
-  - Model evaluation and comparison
-  - Deploy with FastAPI
-- Skills learned: ML pipeline, model deployment
-- Time: 30-40 hours
-
-**2. Sentiment Analysis on Tweets**
-- Technologies: Python, NLTK, Transformers
-- Tasks:
-  - Data collection (Twitter API)
-  - Text preprocessing
-  - Train sentiment classifier
-  - Create dashboard
-- Skills learned: NLP, transformers, deployment
-- Time: 40-50 hours
-
-#### Advanced
-```
-/project ai-agents advanced
-```
-
-**1. RAG-based Q&A System**
-- Technologies: LangChain, OpenAI, Pinecone, FastAPI
-- Tasks:
-  - Document ingestion and chunking
-  - Vector embedding and storage
-  - Retrieval-augmented generation
-  - Web interface
-- Skills learned: RAG, vector databases, LLMs
-- Time: 50-70 hours
-
-**2. Multi-Agent Research Assistant**
-- Technologies: LangChain, AutoGPT, multiple APIs
-- Tasks:
-  - Research agent, summarizer agent, writer agent
-  - Tool use (web search, calculator)
-  - Agent coordination
-  - Results compilation
-- Skills learned: Multi-agent systems, autonomous agents
-- Time: 80-100 hours
-
----
-
-## Project Selection Tips
-
-### Choose Based On:
-
-1. **Current Skill Level**
-   - Start slightly below your level to build confidence
-   - Then challenge yourself with next level
-
-2. **Career Goals**
-   - Building portfolio? Choose diverse projects
-   - Interview prep? Focus on common interview projects
-
-3. **Time Available**
-   - Weekend project: Beginner (8-12 hours)
-   - Monthly project: Intermediate (30-50 hours)
-   - Long-term: Advanced (80+ hours)
-
-4. **Learning Objectives**
-   - Want to learn React? Choose a React project
-   - Want full-stack experience? Choose projects with frontend + backend
+| Time | Project |
+|------|---------|
+| Weekend | Todo Agent |
+| 2 weeks | Research Assistant |
+| 1 month | Multi-Agent System |
+| 3+ months | Enterprise Platform |
 
 ---
 
 ## Project Success Checklist
 
-✅ **Before Starting:**
-- [ ] Understand the requirements
+### Before Starting
+- [ ] Understand requirements
+- [ ] Choose tech stack
 - [ ] Set up development environment
 - [ ] Create GitHub repository
-- [ ] Plan the architecture
 
-✅ **During Development:**
-- [ ] Commit regularly with meaningful messages
-- [ ] Write clean, documented code
-- [ ] Implement error handling
-- [ ] Add unit tests (for intermediate+)
+### During Development
+- [ ] Implement incrementally
+- [ ] Test each component
+- [ ] Add error handling
+- [ ] Write documentation
 
-✅ **After Completion:**
-- [ ] Deploy to production (Vercel, Heroku, etc.)
-- [ ] Write comprehensive README
-- [ ] Add screenshots/demo
-- [ ] Share on LinkedIn/Twitter
-- [ ] Ask for code review
+### After Completion
+- [ ] Deploy (if applicable)
+- [ ] Write README with demo
+- [ ] Record demo video
+- [ ] Share on social media
 
 ---
 
-**Start building:** `/project [technology] [level]` 🛠️
+## Project Templates
 
-The best way to learn is by building real projects!
+Get started quickly with these templates:
+
+```bash
+# LangGraph ReAct Agent
+git clone https://github.com/langchain-ai/langgraph-example
+
+# RAG Pipeline
+git clone https://github.com/langchain-ai/rag-from-scratch
+
+# Multi-Agent System
+git clone https://github.com/langchain-ai/multi-agent-example
+```
+
+---
+
+**Find your project:** `/project [topic] [level]`
+
+The best way to learn is by building!

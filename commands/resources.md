@@ -1,427 +1,311 @@
 ---
 name: resources
-description: Learning Resources
+description: AI Agent Learning Resources
 allowed-tools: Read
 ---
 
-# Learning Resources
+# AI Agent Learning Resources
 
-Get curated, high-quality learning resources for any technology in the developer roadmap.
+Get curated, high-quality resources for AI agent development.
 
 ## Usage
 
 ```
-/resources [technology] [type]
+/resources [topic] [type]
 ```
 
 **Parameters:**
-- `technology`: Any roadmap (react, python, kubernetes, etc.)
-- `type`: Optional - `docs`, `tutorials`, `courses`, `books`, `videos`, `projects`, `communities`
+- `topic`: AI agent topic (agent-fundamentals, rag-systems, etc.)
+- `type`: Optional - `docs`, `tutorials`, `courses`, `papers`, `repos`
 
 ## Examples
 
 ```
-/resources react
-/resources python tutorials
-/resources kubernetes courses
-/resources system-design books
+/resources ai-agents
+/resources rag-systems tutorials
+/resources multi-agent papers
+/resources tool-calling repos
 ```
 
 ---
 
-## Resource Types
+## Official Documentation
 
-### 1. Official Documentation
-The authoritative source for any technology.
+### LLM Providers
 
+**Anthropic Claude**
 ```
-/resources typescript docs
-```
-
-**Example Output:**
-```markdown
-📚 TypeScript Official Documentation
-
-🌟 Primary Resources:
-- TypeScript Handbook: https://www.typescriptlang.org/docs/handbook/
-- TypeScript Playground: https://www.typescriptlang.org/play
-- Release Notes: https://devblogs.microsoft.com/typescript/
-
-📖 Key Sections:
-- Basic Types
-- Interfaces and Type Aliases
-- Generics and Advanced Types
-- Modules and Namespaces
-- Decorators and Metadata
-
-💡 Pro Tip: Use the Playground to test TypeScript features interactively!
+📚 Claude Documentation
+- API Reference: https://docs.anthropic.com/en/api
+- Tool Use Guide: https://docs.anthropic.com/en/docs/build-with-claude/tool-use
+- Prompt Engineering: https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching
+- Building Effective Agents: https://www.anthropic.com/research/building-effective-agents
 ```
 
-### 2. Interactive Tutorials
-Hands-on learning with code examples.
-
+**OpenAI**
 ```
-/resources react tutorials
-```
-
-**Example Output:**
-```markdown
-🎓 React Interactive Tutorials
-
-⭐ Highly Recommended:
-1. **React Official Tutorial** (Free)
-   - URL: https://react.dev/learn
-   - Build a tic-tac-toe game
-   - Learn hooks, state, and props
-   - Time: 2-3 hours
-
-2. **React Hooks Course** (Free)
-   - URL: https://scrimba.com/learn/reacthooks
-   - Interactive coding challenges
-   - useState, useEffect, custom hooks
-   - Time: 4 hours
-
-3. **Full Stack Open** (Free)
-   - URL: https://fullstackopen.com/
-   - React, Node.js, GraphQL, TypeScript
-   - University-level course from Finland
-   - Time: 200+ hours
-
-4. **Epic React** (Paid - $599)
-   - URL: https://epicreact.dev/
-   - By Kent C. Dodds
-   - Advanced patterns and performance
-   - Time: 40+ hours
+📚 OpenAI Documentation
+- API Reference: https://platform.openai.com/docs/api-reference
+- Function Calling: https://platform.openai.com/docs/guides/function-calling
+- Assistants API: https://platform.openai.com/docs/assistants/overview
+- Cookbook: https://cookbook.openai.com/
 ```
 
-### 3. Video Courses
-Structured learning with video content.
+### Agent Frameworks
 
+**LangChain / LangGraph**
 ```
-/resources python courses
-```
-
-**Example Output:**
-```markdown
-🎥 Python Video Courses
-
-🆓 Free Courses:
-1. **Python for Everybody** (Coursera)
-   - By Dr. Chuck (University of Michigan)
-   - Beginner-friendly
-   - Includes certificates
-   - 40+ hours
-
-2. **CS50's Introduction to Programming with Python** (Harvard)
-   - URL: https://cs50.harvard.edu/python/
-   - Free certificate
-   - 50+ hours
-
-💰 Paid Courses:
-1. **Complete Python Bootcamp** (Udemy - $15-30)
-   - 22+ hours
-   - 100+ exercises
-   - Real-world projects
-
-2. **Python for Data Science and Machine Learning** (Udemy)
-   - NumPy, Pandas, Matplotlib
-   - Machine learning with Scikit-learn
-   - 25+ hours
-
-🚀 Advanced:
-1. **Advanced Python Programming** (Real Python)
-   - Decorators, generators, metaclasses
-   - Async programming
-   - Performance optimization
-```
-
-### 4. Books
-In-depth knowledge and references.
-
-```
-/resources javascript books
-```
-
-**Example Output:**
-```markdown
-📚 JavaScript Books
-
-🌟 Essential Books:
-1. **Eloquent JavaScript** (Free)
-   - By Marijn Haverbeke
-   - Available online: https://eloquentjavascript.net/
-   - Best for: Beginners to intermediate
-
-2. **You Don't Know JS** (Free)
-   - By Kyle Simpson
-   - 6-book series
-   - GitHub: https://github.com/getify/You-Dont-Know-JS
-   - Deep dive into JavaScript mechanics
-
-3. **JavaScript: The Good Parts** ($25)
-   - By Douglas Crockford
-   - Focus on best practices
-   - Concise (176 pages)
-
-4. **JavaScript Patterns** ($35)
-   - By Stoyan Stefanov
-   - Design patterns in JavaScript
-   - Best for: Intermediate developers
-
-💎 Advanced:
-1. **Effective JavaScript** ($40)
-   - 68 specific ways to improve your code
-   - Best for: Experienced developers
-
-2. **JavaScript: The Definitive Guide** ($60)
-   - Comprehensive reference (700+ pages)
-   - Covers ES2020+
-```
-
-### 5. Project-Based Learning
-Learn by building real applications.
-
-```
-/resources nodejs projects
-```
-
-**Example Output:**
-```markdown
-🛠️ Node.js Project Ideas
-
-👶 Beginner Projects:
-1. **CLI Task Manager**
-   - Command-line todo app
-   - File system operations
-   - Commander.js for CLI
-   - Estimated time: 4-6 hours
-
-2. **REST API for Notes**
-   - Express.js server
-   - CRUD operations
-   - JSON file storage
-   - Estimated time: 8-10 hours
-
-🏃 Intermediate Projects:
-1. **Blog API with Authentication**
-   - Express + PostgreSQL
-   - JWT authentication
-   - User roles and permissions
-   - Estimated time: 20-30 hours
-
-2. **Real-time Chat Application**
-   - Socket.io for WebSocket
-   - MongoDB for messages
-   - User authentication
-   - Estimated time: 30-40 hours
-
-🚀 Advanced Projects:
-1. **E-commerce Microservices**
-   - Separate services for products, orders, users
-   - Message queue (RabbitMQ)
-   - API gateway
-   - Estimated time: 80-100 hours
-
-2. **Scalable File Upload Service**
-   - S3 integration
-   - Image processing
-   - CDN delivery
-   - Estimated time: 40-60 hours
-
-📦 Open Source Projects to Contribute:
-- Express.js
-- Fastify
-- NestJS
-- Prisma
-```
-
-### 6. Communities & Forums
-Connect with other developers.
-
-```
-/resources react communities
-```
-
-**Example Output:**
-```markdown
-👥 React Communities
-
-💬 Discussion Forums:
-1. **Reactiflux Discord** (120K+ members)
-   - URL: https://www.reactiflux.com/
-   - Active Q&A channels
-   - Job postings
-
-2. **Reddit r/reactjs** (500K+ members)
-   - URL: https://www.reddit.com/r/reactjs/
-   - News, tutorials, discussions
-
-3. **React Discussions (GitHub)**
-   - URL: https://github.com/facebook/react/discussions
-   - Official React team participation
-
-🐦 Twitter/X Communities:
-- @reactjs (Official)
-- @dan_abramov (React core team)
-- @kentcdodds (Educator)
-- @wesbos (Course creator)
-
-📺 YouTube Channels:
-1. **Web Dev Simplified** (1M+ subs)
-2. **Traversy Media** (2M+ subs)
-3. **Fireship** (2.5M+ subs)
-
-🎙️ Podcasts:
-1. **React Podcast**
-2. **Syntax.fm** (React episodes)
-3. **Frontend First**
-
-🏫 Learning Platforms:
-- Frontend Masters
-- Egghead.io
-- Scrimba
-- freeCodeCamp
+📚 LangChain Ecosystem
+- LangChain Docs: https://python.langchain.com/docs/
+- LangGraph Docs: https://langchain-ai.github.io/langgraph/
+- LangSmith: https://docs.smith.langchain.com/
+- GitHub: https://github.com/langchain-ai/langchain
 ```
 
 ---
 
-## Technology-Specific Resources
+## Tutorials
 
-### Frontend
+### Agent Fundamentals
 ```
-/resources frontend
-```
-Get resources for HTML, CSS, JavaScript, React, Vue, Angular, TypeScript, Next.js
+🎓 Interactive Tutorials
 
-### Backend
-```
-/resources backend
-```
-Get resources for Node.js, Spring Boot, Django, Laravel, API design, databases
+1. LangChain Agent Tutorial (Free)
+   URL: https://python.langchain.com/docs/tutorials/agents/
+   Time: 2-3 hours
+   Topics: ReAct, tools, memory
 
-### Mobile
-```
-/resources mobile
-```
-Get resources for Android, iOS, React Native, Flutter, mobile design patterns
+2. LangGraph Quick Start (Free)
+   URL: https://langchain-ai.github.io/langgraph/tutorials/
+   Time: 3-4 hours
+   Topics: State machines, checkpoints
 
-### DevOps
-```
-/resources devops
-```
-Get resources for Docker, Kubernetes, AWS, Terraform, CI/CD, Linux
-
-### Data & AI
-```
-/resources data-science
-```
-Get resources for Python, machine learning, data engineering, MLOps
-
-### System Design
-```
-/resources system-design
-```
-Get resources for scalability, distributed systems, architecture patterns
-
----
-
-## Multi-Resource Bundles
-
-Get comprehensive learning paths:
-
-```
-/resources react full-stack
+3. Anthropic Agent Patterns (Free)
+   URL: https://github.com/anthropics/anthropic-cookbook
+   Time: 4-6 hours
+   Topics: Claude agents, tool use
 ```
 
-**Output:**
-```markdown
-📦 React Full-Stack Learning Bundle
+### RAG Systems
+```
+🎓 RAG Tutorials
 
-🎯 Learning Path (4-6 months):
+1. LangChain RAG Tutorial (Free)
+   URL: https://python.langchain.com/docs/tutorials/rag/
+   Time: 2-3 hours
+   Topics: Basic RAG pipeline
 
-Phase 1: Frontend Fundamentals (1-2 months)
-- HTML/CSS: MDN Web Docs
-- JavaScript: JavaScript.info
-- React Basics: React.dev official tutorial
+2. Pinecone RAG Guide (Free)
+   URL: https://www.pinecone.io/learn/retrieval-augmented-generation/
+   Time: 3-4 hours
+   Topics: Production RAG
 
-Phase 2: React Ecosystem (2-3 months)
-- State Management: Redux Toolkit docs
-- Routing: React Router tutorial
-- Forms: React Hook Form documentation
-
-Phase 3: Full-Stack Integration (1-2 months)
-- Backend: Node.js + Express tutorial
-- Database: PostgreSQL + Prisma
-- Next.js: Official Next.js tutorial
-
-Phase 4: Production Skills (ongoing)
-- Testing: React Testing Library + Vitest
-- Deployment: Vercel documentation
-- Performance: Web.dev performance guides
-
-📚 Complete Resource List:
-[30+ curated links organized by phase]
+3. RAGAS Evaluation (Free)
+   URL: https://docs.ragas.io/en/stable/
+   Time: 1-2 hours
+   Topics: RAG metrics
 ```
 
 ---
 
-## Certification Paths
+## Video Courses
 
+### Free Courses
 ```
-/resources aws certifications
+🎥 Free Learning
+
+1. DeepLearning.AI - LangChain Courses
+   - LangChain for LLM Application Development
+   - LangChain: Chat with Your Data
+   - Building Systems with ChatGPT API
+   URL: https://www.deeplearning.ai/short-courses/
+
+2. Prompt Engineering Guide
+   URL: https://www.promptingguide.ai/
+   Topics: Prompting techniques, chain-of-thought
+
+3. LangChain YouTube Channel
+   URL: https://www.youtube.com/@LangChain
+   Topics: Weekly updates, tutorials
 ```
 
-**Output:**
-```markdown
-🏆 AWS Certification Paths
+### Paid Courses
+```
+💰 Premium Courses
 
-☁️ Available Certifications:
+1. Building AI Agents (DeepLearning.AI)
+   Price: Subscription
+   Topics: Production agents, evaluation
 
-Entry Level:
-1. **AWS Certified Cloud Practitioner**
-   - Cost: $100
-   - Duration: 90 minutes
-   - Prerequisites: None
-   - Study time: 1-2 months
-
-Associate Level:
-2. **AWS Certified Solutions Architect - Associate**
-   - Cost: $150
-   - Duration: 130 minutes
-   - Prerequisites: Recommended 1 year experience
-   - Study time: 2-3 months
-   - Pass rate: ~70%
-
-3. **AWS Certified Developer - Associate**
-4. **AWS Certified SysOps Administrator - Associate**
-
-Professional Level:
-5. **AWS Certified Solutions Architect - Professional**
-6. **AWS Certified DevOps Engineer - Professional**
-
-📖 Study Resources:
-- AWS Training: https://aws.amazon.com/training/
-- A Cloud Guru courses
-- Linux Academy courses
-- Practice exams: Tutorials Dojo
+2. Full Stack LLM Bootcamp (FSDL)
+   URL: https://fullstackdeeplearning.com/
+   Price: Free recordings, paid live
+   Topics: LLMOps, deployment
 ```
 
 ---
 
-## Quick Reference
+## Research Papers
 
-### Most Popular Resources by Technology
+### Must-Read Papers
+```
+📄 Foundational Papers
 
-| Technology | Best Resource |
-|-----------|---------------|
-| **React** | React.dev official docs |
-| **Python** | Real Python tutorials |
-| **Node.js** | NodeSchool.io |
-| **Kubernetes** | Kubernetes.io docs |
-| **AWS** | AWS Skill Builder |
-| **System Design** | System Design Primer (GitHub) |
-| **Algorithms** | LeetCode + NeetCode |
+1. ReAct: Synergizing Reasoning and Acting in LLMs
+   URL: https://arxiv.org/abs/2210.03629
+   Key: Thought-Action-Observation loop
+
+2. Chain-of-Thought Prompting
+   URL: https://arxiv.org/abs/2201.11903
+   Key: Step-by-step reasoning
+
+3. Retrieval-Augmented Generation (RAG)
+   URL: https://arxiv.org/abs/2005.11401
+   Key: Grounding LLMs in knowledge
+
+4. MemGPT: Memory Management for LLMs
+   URL: https://arxiv.org/abs/2310.08560
+   Key: Long-term memory systems
+
+5. Generative Agents: Interactive Simulacra
+   URL: https://arxiv.org/abs/2304.03442
+   Key: Agent memory and behavior
+```
+
+### Recent Papers (2024-2025)
+```
+📄 Latest Research
+
+1. Building Effective Agents (Anthropic, 2024)
+   URL: https://www.anthropic.com/research/building-effective-agents
+   Key: Production patterns
+
+2. Multi-Agent Research System (Anthropic, 2025)
+   URL: https://www.anthropic.com/engineering/multi-agent-research-system
+   Key: Orchestrator-worker pattern
+
+3. Claude Agent SDK Documentation
+   Key: Claude-native agent patterns
+```
 
 ---
 
-**Get started:** `/resources [technology]` to access curated learning materials! 📚
+## GitHub Repositories
+
+### Official Repos
+```
+📦 Framework Repositories
+
+LangChain: https://github.com/langchain-ai/langchain
+LangGraph: https://github.com/langchain-ai/langgraph
+Anthropic SDK: https://github.com/anthropics/anthropic-sdk-python
+OpenAI SDK: https://github.com/openai/openai-python
+```
+
+### Example Projects
+```
+📦 Learning Repositories
+
+1. Anthropic Cookbook
+   URL: https://github.com/anthropics/anthropic-cookbook
+   Topics: Claude patterns, tool use
+
+2. OpenAI Cookbook
+   URL: https://github.com/openai/openai-cookbook
+   Topics: Function calling, embeddings
+
+3. LangChain Templates
+   URL: https://github.com/langchain-ai/langchain/tree/master/templates
+   Topics: Production patterns
+```
+
+### Multi-Agent Frameworks
+```
+📦 Multi-Agent Repos
+
+1. AutoGen (Microsoft)
+   URL: https://github.com/microsoft/autogen
+   Topics: Multi-agent conversations
+
+2. CrewAI
+   URL: https://github.com/joaomdmoura/crewAI
+   Topics: Role-based agents
+
+3. MetaGPT
+   URL: https://github.com/geekan/MetaGPT
+   Topics: Software development agents
+```
+
+---
+
+## Tools & Libraries
+
+### Vector Databases
+```
+🗄️ Vector Store Options
+
+Pinecone: https://www.pinecone.io/ (Managed)
+Weaviate: https://weaviate.io/ (Hybrid search)
+Qdrant: https://qdrant.tech/ (High performance)
+Chroma: https://www.trychroma.com/ (Local dev)
+pgvector: https://github.com/pgvector/pgvector (PostgreSQL)
+```
+
+### Embedding Models
+```
+🔢 Embedding Options
+
+OpenAI: text-embedding-3-small/large
+Cohere: embed-v3
+Voyage AI: voyage-3
+Open Source: BGE, E5, GTE
+```
+
+### Safety & Guardrails
+```
+🛡️ Safety Tools
+
+Guardrails AI: https://docs.guardrailsai.com/
+NeMo Guardrails: https://github.com/NVIDIA/NeMo-Guardrails
+```
+
+---
+
+## Community
+
+### Discord Servers
+```
+💬 Active Communities
+
+LangChain Discord: https://discord.gg/langchain
+Anthropic Discord: https://discord.gg/anthropic
+OpenAI Discord: https://discord.gg/openai
+```
+
+### Twitter/X Accounts
+```
+🐦 Follow for Updates
+
+@LangChainAI - LangChain official
+@AnthropicAI - Anthropic official
+@OpenAI - OpenAI official
+@hwchase17 - Harrison Chase (LangChain)
+```
+
+---
+
+## Quick Reference by Topic
+
+| Topic | Best Resource |
+|-------|---------------|
+| Agent Fundamentals | LangGraph Tutorials |
+| LLM Integration | Official SDK Docs |
+| RAG Systems | LangChain RAG Tutorial |
+| Tool Calling | Anthropic Tool Use Guide |
+| Multi-Agent | Anthropic Multi-Agent Paper |
+| Agent Memory | MemGPT Paper |
+| Agent Safety | OWASP LLM Top 10 |
+
+---
+
+**Get resources:** `/resources [topic]`

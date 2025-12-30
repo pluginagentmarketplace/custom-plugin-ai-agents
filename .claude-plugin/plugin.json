@@ -1,31 +1,30 @@
 {
   "name": "ai-agents-assistant",
-  "version": "1.0.0",
-  "description": "AI agents plugin with specialized agents for LLM integration, RAG, and autonomous agent development",
+  "version": "2.0.0",
+  "description": "Production-grade AI agent development plugin with specialized agents for LLM integration, RAG systems, tool calling, multi-agent orchestration, and agent safety",
   "author": "Plugin Agent Marketplace",
   "repository": "https://github.com/pluginagentmarketplace/custom-plugin-ai-agents",
   "license": "SEE LICENSE IN LICENSE",
   "keywords": [
-    "roadmap",
-    "learning",
-    "developer",
-    "frontend",
-    "backend",
-    "mobile",
-    "devops",
-    "ai",
-    "data-science",
-    "programming",
-    "architecture",
-    "react",
-    "nodejs",
-    "python",
-    "kubernetes",
-    "aws",
-    "system-design",
-    "career-development",
-    "tutorial",
-    "best-practices"
+    "ai-agents",
+    "llm",
+    "rag",
+    "langchain",
+    "langgraph",
+    "anthropic",
+    "claude",
+    "openai",
+    "tool-calling",
+    "function-calling",
+    "multi-agent",
+    "embeddings",
+    "vector-database",
+    "prompt-engineering",
+    "agent-memory",
+    "guardrails",
+    "agent-safety",
+    "react-pattern",
+    "orchestration"
   ],
   "agents": [
     "./agents/01-ai-agent-fundamentals.md",
@@ -39,32 +38,32 @@
   "commands": [
     {
       "name": "learn",
-      "description": "Start your developer roadmap journey - choose from 7 specialization paths",
+      "description": "Start your AI agent development journey - choose from 7 learning paths",
       "file": "commands/learn.md"
     },
     {
       "name": "roadmap",
-      "description": "View comprehensive learning roadmap for any of 65+ technologies",
+      "description": "View comprehensive AI agent development roadmap",
       "file": "commands/roadmap.md",
-      "usage": "/roadmap [technology]"
+      "usage": "/roadmap [topic]"
     },
     {
       "name": "assess",
-      "description": "Test your knowledge and get personalized recommendations",
+      "description": "Test your AI agent development knowledge",
       "file": "commands/assess.md",
-      "usage": "/assess [technology] [level]"
+      "usage": "/assess [topic] [level]"
     },
     {
       "name": "resources",
-      "description": "Get curated learning resources (docs, tutorials, courses, books, projects)",
+      "description": "Get curated AI agent learning resources (docs, tutorials, papers, repos)",
       "file": "commands/resources.md",
-      "usage": "/resources [technology] [type]"
+      "usage": "/resources [topic] [type]"
     },
     {
       "name": "project",
-      "description": "Find hands-on project ideas by skill level to build your portfolio",
+      "description": "Find hands-on AI agent project ideas by skill level",
       "file": "commands/project.md",
-      "usage": "/project [technology] [level]"
+      "usage": "/project [topic] [level]"
     }
   ],
   "skills": [

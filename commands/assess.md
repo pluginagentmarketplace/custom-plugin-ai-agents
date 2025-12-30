@@ -1,346 +1,227 @@
 ---
 name: assess
-description: Knowledge Assessment
+description: AI Agent Skills Assessment
 allowed-tools: Read
 ---
 
-# Knowledge Assessment
+# AI Agent Skills Assessment
 
-Test your understanding and track your progress in any technology roadmap.
+Test your understanding of AI agent development, architectures, and best practices.
 
 ## Usage
 
 ```
-/assess [technology] [level]
+/assess [topic] [level]
 ```
 
 **Parameters:**
-- `technology`: The roadmap to assess (e.g., react, python, kubernetes)
+- `topic`: The AI agent topic to assess
 - `level`: Optional - `beginner`, `intermediate`, `advanced`, or `expert`
+
+## Available Topics
+
+### Core Topics
+- `agent-fundamentals` - ReAct, cognitive loops, architectures
+- `llm-integration` - API usage, prompting, cost optimization
+- `rag-systems` - Embeddings, retrieval, chunking
+- `tool-calling` - Function calling, schema design
+- `multi-agent` - Orchestration, coordination
+- `agent-memory` - Short/long-term, retrieval
+- `agent-safety` - Guardrails, filtering, compliance
+
+### Framework-Specific
+- `langchain` - LangChain patterns and tools
+- `langgraph` - State machines, workflows
+- `anthropic` - Claude API, tool use
+- `openai` - Function calling, assistants
 
 ## Examples
 
 ```
-/assess react
-/assess python beginner
-/assess kubernetes advanced
-/assess system-design expert
+/assess agent-fundamentals
+/assess tool-calling intermediate
+/assess multi-agent advanced
+/assess rag-systems beginner
 ```
 
 ---
 
-## Assessment Types
+## Sample Assessment: Tool Calling (Intermediate)
 
-### 1. Quick Check (5-10 questions)
-Fast assessment to identify knowledge gaps.
-
-```
-/assess react quick
-```
-
-### 2. Comprehensive Evaluation (20-30 questions)
-In-depth assessment covering all aspects.
-
-```
-/assess backend comprehensive
-```
-
-### 3. Interview Prep
-Real interview questions with detailed solutions.
-
-```
-/assess python interview
-```
-
-### 4. Hands-On Challenge
-Practical coding challenges.
-
-```
-/assess javascript challenge
-```
-
----
-
-## Sample Assessment: React (Intermediate)
-
-When you run `/assess react intermediate`, you'll get:
-
-### Knowledge Check Questions
-
-**1. Hooks & State Management**
-```typescript
-// What's wrong with this code?
-function Component() {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    setCount(count + 1);
-  }, []);
-
-  return <div>{count}</div>;
+### Question 1: Schema Design
+```python
+# What's wrong with this tool definition?
+{
+    "name": "helper",
+    "description": "Does stuff",
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "data": {"type": "any"}
+        }
+    }
 }
 ```
 
 <details>
 <summary>Show Answer</summary>
 
-**Issue:** The dependency array is empty, but `count` is used inside useEffect. This will only run once with the initial value of `count` (0).
+**Issues:**
+1. Name is too vague - use `verb_noun` pattern (e.g., `search_products`)
+2. Description doesn't explain when to use
+3. `"type": "any"` is not valid JSON Schema
+4. Missing `required` field
+5. Missing `additionalProperties: false` for strict mode
 
-**Fix:** Either add `count` to dependencies (causes infinite loop), or use functional update:
-```typescript
-useEffect(() => {
-  setCount(prev => prev + 1);
-}, []);
+**Better:**
+```python
+{
+    "name": "search_products",
+    "description": "Search product database. USE WHEN: User asks about products.",
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "query": {"type": "string", "description": "Search query"},
+            "category": {"type": "string", "enum": ["electronics", "clothing"]}
+        },
+        "required": ["query"],
+        "additionalProperties": false
+    }
+}
 ```
 </details>
 
-**2. Performance Optimization**
+### Question 2: Error Handling
 ```
-When should you use useMemo vs useCallback?
+How should tool execution errors be returned to the LLM?
 ```
 
 <details>
 <summary>Show Answer</summary>
 
-- **useMemo**: Memoize the *result* of expensive computations
-  ```typescript
-  const expensiveValue = useMemo(() => computeHeavy(a, b), [a, b]);
-  ```
+**Best Practice:** Return errors as tool results, not exceptions.
 
-- **useCallback**: Memoize the *function itself* to prevent re-creation
-  ```typescript
-  const handleClick = useCallback(() => doSomething(a), [a]);
-  ```
+```python
+# Good: Return error in result
+tool_results.append({
+    "type": "tool_result",
+    "tool_use_id": block.id,
+    "content": json.dumps({
+        "status": "error",
+        "error": "Database connection failed",
+        "suggestion": "Try again in a few seconds"
+    })
+})
 
-Use `useCallback` when passing callbacks to optimized child components that use `React.memo`.
+# Bad: Throw exception
+raise ToolExecutionError("Database connection failed")
+```
+
+The LLM can then decide how to proceed based on the error.
 </details>
 
-**3. State Management**
+### Question 3: Multi-Step Tools
 ```
-Compare Context API vs Redux Toolkit. When would you choose each?
+When should you use sequential vs parallel tool execution?
 ```
 
 <details>
 <summary>Show Answer</summary>
 
-**Context API:**
-- ✅ Simple global state
-- ✅ Avoiding prop drilling
-- ✅ Theme, auth, user preferences
-- ❌ Frequent updates cause re-renders
+**Sequential:** When tools depend on each other
+```python
+# Step 1: Search products
+products = await search_products(query)
 
-**Redux Toolkit:**
-- ✅ Complex state logic
-- ✅ Many state updates
-- ✅ Time-travel debugging
-- ✅ Middleware (API calls, logging)
-- ❌ More boilerplate
+# Step 2: Get details (depends on step 1)
+details = await get_product_details(products[0].id)
+```
 
-**Rule of thumb:** Start with Context API, migrate to Redux when state becomes complex.
+**Parallel:** When tools are independent
+```python
+# These can run simultaneously
+results = await asyncio.gather(
+    get_weather("Tokyo"),
+    get_weather("London"),
+    get_weather("New York")
+)
+```
+
+Use `asyncio.gather()` for parallel execution.
 </details>
 
 ---
 
 ## Assessment Results
 
-After completing an assessment, you'll receive:
+After completing an assessment, you receive:
 
-### 1. Score & Level
+### Score & Level
 ```
-📊 Assessment Results: React Intermediate
+📊 Assessment Results: Tool Calling (Intermediate)
 
-Score: 24/30 (80%)
+Score: 8/10 (80%)
 Level: ✅ Intermediate Confirmed
 
 Strengths:
-✅ Hooks (useState, useEffect, useRef)
-✅ Component composition
-✅ Performance optimization basics
+✅ Schema design basics
+✅ Error handling patterns
+✅ Claude tool use syntax
 
 Areas to improve:
-⚠️ Advanced hooks (useReducer, useImperativeHandle)
-⚠️ Server-side rendering (Next.js)
-⚠️ Testing (React Testing Library)
+⚠️ OpenAI strict mode configuration
+⚠️ MCP (Model Context Protocol)
+⚠️ Tool orchestration patterns
 ```
 
-### 2. Personalized Learning Path
+### Recommended Next Steps
 ```
-📚 Recommended Next Steps:
+📚 Study Plan:
 
-1. Study useReducer for complex state
-   Resource: /roadmap react (Advanced Section)
-   Skill: react-development
+1. Review OpenAI strict mode
+   Skill: tool-calling (OpenAI section)
 
-2. Learn Next.js App Router
-   Resource: /roadmap nextjs
-   Skill: nextjs-fullstack
+2. Learn MCP patterns
+   Resource: MCP documentation
 
-3. Practice component testing
-   Project: /project react advanced (Testing-focused)
-
-4. Review Server Components
-   Ask: "Explain React Server Components vs Client Components"
-```
-
-### 3. Skill Gaps
-```
-🎯 Skill Development Plan:
-
-Week 1-2: Advanced Hooks
-- useReducer for form state
-- useImperativeHandle for ref forwarding
-- Custom hooks library
-
-Week 3-4: Next.js
-- App Router navigation
-- Server Components
-- Data fetching patterns
-
-Week 5-6: Testing
-- React Testing Library
-- Mock API calls
-- E2E with Playwright
-```
-
-### 4. Project Recommendations
-```
-💡 Build These Projects:
-
-1. Advanced Todo App
-   - useReducer for state
-   - Custom hooks for localStorage
-   - Unit tests with Vitest
-
-2. Blog with Next.js
-   - App Router
-   - Server Components
-   - MDX support
-
-3. Testing Workshop
-   - Set up testing environment
-   - Write 20+ component tests
-   - E2E test critical flows
+3. Practice tool orchestration
+   Project: Build multi-tool agent
 ```
 
 ---
 
-## Assessment Categories
+## Quick Assessment Types
 
-### Frontend
-- `frontend`, `react`, `vue`, `angular`
-- `typescript`, `javascript`, `html`, `css`
-- `nextjs`, `ux-design`
-
-### Backend
-- `backend`, `nodejs`, `spring-boot`
-- `api-design`, `graphql`, `databases`
-
-### Mobile
-- `android`, `ios`, `react-native`, `flutter`
-
-### DevOps
-- `devops`, `docker`, `kubernetes`
-- `aws`, `terraform`, `linux`
-
-### AI & Data
-- `machine-learning`, `data-science`, `ai-agents`
-- `python`, `sql`, `mlops`
-
-### Architecture
-- `system-design`, `software-architecture`
-- `cyber-security`, `blockchain`
-
----
-
-## Interview Preparation Mode
-
+### 1. Quick Check (5 questions)
 ```
-/assess [technology] interview
+/assess rag-systems quick
 ```
 
-**Example: Backend Interview**
+### 2. Comprehensive (20 questions)
 ```
-/assess backend interview
-```
-
-You'll get:
-- System design questions
-- Coding challenges
-- Database design problems
-- API design scenarios
-- Behavioral questions
-- Mock interview format
-
-**Sample Questions:**
-1. "Design a rate limiter" (System Design)
-2. "Implement a REST API for a blog" (Coding)
-3. "Optimize this slow query" (Database)
-4. "How would you secure an API?" (Security)
-5. "Tell me about a challenging project" (Behavioral)
-
----
-
-## Hands-On Challenges
-
-```
-/assess [technology] challenge
+/assess llm-integration comprehensive
 ```
 
-**Example: React Challenge**
+### 3. Hands-On Challenge
 ```
-/assess react challenge
+/assess agent-fundamentals challenge
 ```
 
 You'll get a coding challenge like:
+```python
+"""
+Challenge: Build a ReAct Agent
 
-```typescript
-/**
- * Challenge: Build a Searchable Product List
- *
- * Requirements:
- * 1. Fetch products from /api/products
- * 2. Implement search/filter functionality
- * 3. Add pagination (10 items per page)
- * 4. Optimize performance (useMemo, useCallback)
- * 5. Add loading and error states
- * 6. Write tests
- *
- * Time: 60 minutes
- * Difficulty: Intermediate
- */
+Requirements:
+1. Implement Thought → Action → Observation loop
+2. Add max_iterations limit (10)
+3. Implement circuit breaker for errors
+4. Support parallel tool calls
 
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-  category: string;
-}
-
-function ProductList() {
-  // Your implementation here
-}
+Time: 45 minutes
+"""
 ```
 
 ---
 
-## Track Your Progress
-
-Assessments are saved to help you track improvement:
-
-```
-📈 Your Progress: React
-
-Assessment History:
-- Dec 15, 2024: Beginner (65%) → Study hooks
-- Jan 10, 2025: Intermediate (80%) → Learn Next.js
-- Feb 5, 2025: Advanced (72%) → Master performance
-
-Next Milestone: Advanced (85%+)
-Estimated Time: 4-6 weeks
-```
-
----
-
-**Start your assessment now:** `/assess [technology]` 📝
-
-Track your learning journey and identify exactly what to study next!
+**Start your assessment:** `/assess [topic]`
