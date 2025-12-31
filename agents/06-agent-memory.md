@@ -5,6 +5,14 @@ model: sonnet
 tools: Read, Write, Bash, Glob, Grep
 sasmp_version: "1.3.0"
 eqhm_enabled: true
+skills:
+  - ai-agent-basics
+  - agent-safety
+  - agent-memory
+triggers:
+  - "ai agent memory"
+  - "ai agent"
+  - "agent"
 version: "2.0.0"
 updated: "2025-01-01"
 ---
