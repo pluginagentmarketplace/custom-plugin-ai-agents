@@ -39,30 +39,30 @@
     {
       "name": "learn",
       "description": "Start your AI agent development journey - choose from 7 learning paths",
-      "file": "commands/learn.md"
+      "file": "./commands/learn.md"
     },
     {
       "name": "roadmap",
       "description": "View comprehensive AI agent development roadmap",
-      "file": "commands/roadmap.md",
+      "file": "./commands/roadmap.md",
       "usage": "/roadmap [topic]"
     },
     {
       "name": "assess",
       "description": "Test your AI agent development knowledge",
-      "file": "commands/assess.md",
+      "file": "./commands/assess.md",
       "usage": "/assess [topic] [level]"
     },
     {
       "name": "resources",
       "description": "Get curated AI agent learning resources (docs, tutorials, papers, repos)",
-      "file": "commands/resources.md",
+      "file": "./commands/resources.md",
       "usage": "/resources [topic] [type]"
     },
     {
       "name": "project",
       "description": "Find hands-on AI agent project ideas by skill level",
-      "file": "commands/project.md",
+      "file": "./commands/project.md",
       "usage": "/project [topic] [level]"
     }
   ],
