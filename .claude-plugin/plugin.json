@@ -74,8 +74,5 @@
     "./skills/multi-agent/SKILL.md",
     "./skills/agent-memory/SKILL.md",
     "./skills/agent-safety/SKILL.md"
-  ],
-  "hooks": {
-    "config": "hooks/hooks.json"
-  }
+  ]
 }

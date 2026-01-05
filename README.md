@@ -64,7 +64,7 @@
 
 ```bash
 # Step 1️⃣ Add the marketplace
-/plugin add marketplace pluginagentmarketplace/custom-plugin-ai-agents
+/plugin marketplace add pluginagentmarketplace/custom-plugin-ai-agents
 
 # Step 2️⃣ Install the plugin
 /plugin install custom-plugin-ai-agents@pluginagentmarketplace-ai-agents
